@@ -51,7 +51,7 @@ def main():
         logPrint('Model loaded. Begin from Epoch #{}.'.format(currentEpoch))
     else:
         currentEpoch = 0
-        logPrint('Model created. New start.')
+        logPrint('Model created. New start. Good Luck!')
 
     # Loss Function
     lossHandle = nn.L1Loss()
@@ -108,6 +108,7 @@ def main():
                 valLossMeter.append(lossHandle(imgOutput, imgGt))
                 
         logPrint("Evaluation Loss of the epoch:{:.4f}".format(valLossMeter.movingAvg()))  
+        logPrint("----------")  
 
         # Renew Meters
         trainLossMeter.flush()
