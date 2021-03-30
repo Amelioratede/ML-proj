@@ -60,11 +60,11 @@ class Refine(nn.Sequential):
 class Model(nn.Module): 
     def __init__(self):
         super(Model, self).__init__() 
-        self.featEx_A = FeatureExtraction(inputSize=3, outputSize=32, ratio=2)
-        self.Up_A = UpSampling(inputSize=32, outputSize=32)
-        self.featEx_B = FeatureExtraction(inputSize=32, outputSize=64, ratio=2)
-        self.Up_B = UpSampling(inputSize=64, outputSize=64)
-        self.Distill = Refine(inputSize=64, midSizeList=[32, 8])
+        self.featEx_A = FeatureExtraction(inputSize=3, outputSize=64, ratio=2)
+        self.Up_A = UpSampling(inputSize=64, outputSize=128)
+        self.featEx_B = FeatureExtraction(inputSize=128, outputSize=128, ratio=2)
+        self.Up_B = UpSampling(inputSize=128, outputSize=128)
+        self.Distill = Refine(inputSize=128, midSizeList=[64, 16])
 
     def forward(self, x):
         x1 = self.featEx_A(x)
