@@ -1,0 +1,117 @@
+Model loaded from Epoch #5.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #6.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #7.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #7.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #7.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #7.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #8.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #8.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #8.
+Data Loaded. Quantity of Validation Instances:100.
+Model loaded from Epoch #8.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Evaluating...
+Evaluating...
+Evaluating...
+Evaluating...
+Evaluating...
+Evaluating...
+Model loaded from Epoch #8.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Model Avg PSNR:18.9771 vs. Baseline Avg PSNR:22.2092
+Model loaded from Epoch #8.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Avg PSNR - Model vs. Baseline
+18.9771 22.2092
+
+-------- Time: 03/30/2021, 18:17:21 --------
+Config: Scale-4
+Model loaded from Epoch #8.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+
+-------- Time: 03/30/2021, 18:29:37 --------
+Config: Scale-4
+Model loaded from Epoch #9.
+Data Loaded. Quantity of Validation Instances:100.
+
+-------- Time: 03/30/2021, 18:29:48 --------
+Config: Scale-4
+Model loaded from Epoch #9.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+
+-------- Time: 03/30/2021, 18:30:05 --------
+Config: Scale-4
+Model loaded from Epoch #9.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Loss of the Baseline:0.0523
+Avg PSNR
+Model vs. Baseline
+19.0685 22.2092
+
+-------- Time: 03/30/2021, 19:08:09 --------
+Config: Scale-4
+Model loaded from Epoch #0.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Loss of the Baseline:0.0523
+Avg PSNR - Model vs. Baseline
+19.5413 22.2092
+
+-------- Time: 03/30/2021, 21:56:53 --------
+Config: Scale-4
+Model loaded from Epoch #2.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Loss of the Baseline:0.0523
+Avg PSNR - Model vs. Baseline
+20.6956 22.2092
+
+-------- Time: 03/30/2021, 22:07:16 --------
+Config: Scale-4
+Model loaded from Epoch #4.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Loss of the Baseline:0.0523
+Avg PSNR - Model vs. Baseline
+20.9032 22.2092
+
+-------- Time: 03/30/2021, 22:35:49 --------
+Config: Scale-4
+Model loaded from Epoch #9.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Loss of the Baseline:0.0523
+Avg PSNR - Model vs. Baseline
+21.5694 22.2092
+
+-------- Time: 03/30/2021, 23:01:49 --------
+Config: Scale-4
+Model loaded from Epoch #13.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Loss of the Baseline:0.0523
+Avg PSNR - Model vs. Baseline
+21.8512 22.2092
+
+-------- Time: 03/30/2021, 23:32:11 --------
+Config: Scale-4
+Model loaded from Epoch #19.
+Data Loaded. Quantity of Validation Instances:100.
+Evaluating...
+Loss of the Baseline:0.0523
+Avg PSNR - Model vs. Baseline
+22.0327 22.2092

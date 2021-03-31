@@ -1,0 +1,1114 @@
+
+-------- Tensor Flys at 03/30/2021, 18:39:25 --------
+Config: Scale-4 | Epochs-40 | Learning Rate-0.0001 | Batch Size-1
+Model created. New start.
+Data Loaded. Quantity of Training Instances:800.
+Training at Epoch #0...
+	Iteration:0 | Mov Avg Loss:0.4507
+	Iteration:10 | Mov Avg Loss:0.4012
+	Iteration:20 | Mov Avg Loss:0.3923
+	Iteration:30 | Mov Avg Loss:0.3575
+	Iteration:40 | Mov Avg Loss:0.3097
+	Iteration:50 | Mov Avg Loss:0.2793
+	Iteration:60 | Mov Avg Loss:0.2552
+	Iteration:70 | Mov Avg Loss:0.2447
+	Iteration:80 | Mov Avg Loss:0.2312
+	Iteration:90 | Mov Avg Loss:0.2202
+	Iteration:100 | Mov Avg Loss:0.2108
+	Iteration:110 | Mov Avg Loss:0.2027
+	Iteration:120 | Mov Avg Loss:0.1967
+	Iteration:130 | Mov Avg Loss:0.1911
+	Iteration:140 | Mov Avg Loss:0.1877
+	Iteration:150 | Mov Avg Loss:0.1834
+	Iteration:160 | Mov Avg Loss:0.1814
+	Iteration:170 | Mov Avg Loss:0.1775
+	Iteration:180 | Mov Avg Loss:0.1753
+	Iteration:190 | Mov Avg Loss:0.1730
+	Iteration:200 | Mov Avg Loss:0.1705
+	Iteration:210 | Mov Avg Loss:0.1685
+	Iteration:220 | Mov Avg Loss:0.1662
+	Iteration:230 | Mov Avg Loss:0.1642
+	Iteration:240 | Mov Avg Loss:0.1631
+	Iteration:250 | Mov Avg Loss:0.1613
+	Iteration:260 | Mov Avg Loss:0.1599
+	Iteration:270 | Mov Avg Loss:0.1580
+	Iteration:280 | Mov Avg Loss:0.1567
+	Iteration:290 | Mov Avg Loss:0.1549
+	Iteration:300 | Mov Avg Loss:0.1538
+	Iteration:310 | Mov Avg Loss:0.1530
+	Iteration:320 | Mov Avg Loss:0.1515
+	Iteration:330 | Mov Avg Loss:0.1507
+	Iteration:340 | Mov Avg Loss:0.1502
+	Iteration:350 | Mov Avg Loss:0.1488
+	Iteration:360 | Mov Avg Loss:0.1474
+	Iteration:370 | Mov Avg Loss:0.1462
+	Iteration:380 | Mov Avg Loss:0.1452
+	Iteration:390 | Mov Avg Loss:0.1441
+	Iteration:400 | Mov Avg Loss:0.1438
+	Iteration:410 | Mov Avg Loss:0.1425
+	Iteration:420 | Mov Avg Loss:0.1419
+	Iteration:430 | Mov Avg Loss:0.1412
+	Iteration:440 | Mov Avg Loss:0.1403
+	Iteration:450 | Mov Avg Loss:0.1395
+	Iteration:460 | Mov Avg Loss:0.1384
+	Iteration:470 | Mov Avg Loss:0.1376
+	Iteration:480 | Mov Avg Loss:0.1368
+	Iteration:490 | Mov Avg Loss:0.1358
+	Iteration:500 | Mov Avg Loss:0.1350
+	Iteration:510 | Mov Avg Loss:0.1341
+	Iteration:520 | Mov Avg Loss:0.1331
+	Iteration:530 | Mov Avg Loss:0.1321
+	Iteration:540 | Mov Avg Loss:0.1315
+	Iteration:550 | Mov Avg Loss:0.1306
+	Iteration:560 | Mov Avg Loss:0.1297
+	Iteration:570 | Mov Avg Loss:0.1288
+	Iteration:580 | Mov Avg Loss:0.1285
+	Iteration:590 | Mov Avg Loss:0.1278
+	Iteration:600 | Mov Avg Loss:0.1269
+	Iteration:610 | Mov Avg Loss:0.1261
+	Iteration:620 | Mov Avg Loss:0.1254
+	Iteration:630 | Mov Avg Loss:0.1247
+	Iteration:640 | Mov Avg Loss:0.1239
+	Iteration:650 | Mov Avg Loss:0.1230
+	Iteration:660 | Mov Avg Loss:0.1223
+	Iteration:670 | Mov Avg Loss:0.1217
+	Iteration:680 | Mov Avg Loss:0.1209
+	Iteration:690 | Mov Avg Loss:0.1202
+	Iteration:700 | Mov Avg Loss:0.1197
+	Iteration:710 | Mov Avg Loss:0.1190
+	Iteration:720 | Mov Avg Loss:0.1186
+	Iteration:730 | Mov Avg Loss:0.1180
+	Iteration:740 | Mov Avg Loss:0.1173
+	Iteration:750 | Mov Avg Loss:0.1167
+	Iteration:760 | Mov Avg Loss:0.1161
+	Iteration:770 | Mov Avg Loss:0.1158
+	Iteration:780 | Mov Avg Loss:0.1152
+	Iteration:790 | Mov Avg Loss:0.1147
+Training Loss of the epoch:0.1143
+Model saved.
+Evaluating at Epoch #0...
+Evaluation Loss of the epoch:0.0769
+Training at Epoch #1...
+	Iteration:0 | Mov Avg Loss:0.1028
+	Iteration:10 | Mov Avg Loss:0.0807
+	Iteration:20 | Mov Avg Loss:0.0771
+	Iteration:30 | Mov Avg Loss:0.0741
+	Iteration:40 | Mov Avg Loss:0.0719
+	Iteration:50 | Mov Avg Loss:0.0719
+	Iteration:60 | Mov Avg Loss:0.0722
+	Iteration:70 | Mov Avg Loss:0.0751
+	Iteration:80 | Mov Avg Loss:0.0749
+	Iteration:90 | Mov Avg Loss:0.0747
+	Iteration:100 | Mov Avg Loss:0.0750
+	Iteration:110 | Mov Avg Loss:0.0736
+	Iteration:120 | Mov Avg Loss:0.0731
+	Iteration:130 | Mov Avg Loss:0.0725
+	Iteration:140 | Mov Avg Loss:0.0730
+	Iteration:150 | Mov Avg Loss:0.0726
+	Iteration:160 | Mov Avg Loss:0.0731
+	Iteration:170 | Mov Avg Loss:0.0726
+	Iteration:180 | Mov Avg Loss:0.0730
+	Iteration:190 | Mov Avg Loss:0.0730
+	Iteration:200 | Mov Avg Loss:0.0727
+	Iteration:210 | Mov Avg Loss:0.0729
+	Iteration:220 | Mov Avg Loss:0.0727
+	Iteration:230 | Mov Avg Loss:0.0728
+	Iteration:240 | Mov Avg Loss:0.0729
+	Iteration:250 | Mov Avg Loss:0.0732
+	Iteration:260 | Mov Avg Loss:0.0735
+	Iteration:270 | Mov Avg Loss:0.0732
+	Iteration:280 | Mov Avg Loss:0.0736
+	Iteration:290 | Mov Avg Loss:0.0732
+	Iteration:300 | Mov Avg Loss:0.0734
+	Iteration:310 | Mov Avg Loss:0.0735
+	Iteration:320 | Mov Avg Loss:0.0734
+	Iteration:330 | Mov Avg Loss:0.0736
+	Iteration:340 | Mov Avg Loss:0.0740
+	Iteration:350 | Mov Avg Loss:0.0736
+	Iteration:360 | Mov Avg Loss:0.0733
+	Iteration:370 | Mov Avg Loss:0.0733
+	Iteration:380 | Mov Avg Loss:0.0731
+	Iteration:390 | Mov Avg Loss:0.0728
+	Iteration:400 | Mov Avg Loss:0.0729
+	Iteration:410 | Mov Avg Loss:0.0726
+	Iteration:420 | Mov Avg Loss:0.0725
+	Iteration:430 | Mov Avg Loss:0.0725
+	Iteration:440 | Mov Avg Loss:0.0726
+	Iteration:450 | Mov Avg Loss:0.0724
+	Iteration:460 | Mov Avg Loss:0.0722
+	Iteration:470 | Mov Avg Loss:0.0722
+	Iteration:480 | Mov Avg Loss:0.0722
+	Iteration:490 | Mov Avg Loss:0.0721
+	Iteration:500 | Mov Avg Loss:0.0721
+	Iteration:510 | Mov Avg Loss:0.0722
+	Iteration:520 | Mov Avg Loss:0.0721
+	Iteration:530 | Mov Avg Loss:0.0719
+	Iteration:540 | Mov Avg Loss:0.0719
+	Iteration:550 | Mov Avg Loss:0.0717
+	Iteration:560 | Mov Avg Loss:0.0716
+	Iteration:570 | Mov Avg Loss:0.0714
+	Iteration:580 | Mov Avg Loss:0.0716
+	Iteration:590 | Mov Avg Loss:0.0715
+	Iteration:600 | Mov Avg Loss:0.0714
+	Iteration:610 | Mov Avg Loss:0.0714
+	Iteration:620 | Mov Avg Loss:0.0713
+	Iteration:630 | Mov Avg Loss:0.0712
+	Iteration:640 | Mov Avg Loss:0.0710
+	Iteration:650 | Mov Avg Loss:0.0708
+	Iteration:660 | Mov Avg Loss:0.0707
+	Iteration:670 | Mov Avg Loss:0.0706
+	Iteration:680 | Mov Avg Loss:0.0705
+	Iteration:690 | Mov Avg Loss:0.0704
+	Iteration:700 | Mov Avg Loss:0.0704
+	Iteration:710 | Mov Avg Loss:0.0704
+	Iteration:720 | Mov Avg Loss:0.0707
+	Iteration:730 | Mov Avg Loss:0.0708
+	Iteration:740 | Mov Avg Loss:0.0708
+	Iteration:750 | Mov Avg Loss:0.0708
+	Iteration:760 | Mov Avg Loss:0.0708
+	Iteration:770 | Mov Avg Loss:0.0710
+	Iteration:780 | Mov Avg Loss:0.0709
+	Iteration:790 | Mov Avg Loss:0.0709
+Training Loss of the epoch:0.0709
+Model saved.
+Evaluating at Epoch #1...
+Evaluation Loss of the epoch:0.0711
+Training at Epoch #2...
+	Iteration:0 | Mov Avg Loss:0.0950
+	Iteration:10 | Mov Avg Loss:0.0774
+	Iteration:20 | Mov Avg Loss:0.0707
+	Iteration:30 | Mov Avg Loss:0.0669
+	Iteration:40 | Mov Avg Loss:0.0651
+	Iteration:50 | Mov Avg Loss:0.0645
+	Iteration:60 | Mov Avg Loss:0.0644
+	Iteration:70 | Mov Avg Loss:0.0670
+	Iteration:80 | Mov Avg Loss:0.0663
+	Iteration:90 | Mov Avg Loss:0.0657
+	Iteration:100 | Mov Avg Loss:0.0662
+	Iteration:110 | Mov Avg Loss:0.0650
+	Iteration:120 | Mov Avg Loss:0.0648
+	Iteration:130 | Mov Avg Loss:0.0645
+	Iteration:140 | Mov Avg Loss:0.0647
+	Iteration:150 | Mov Avg Loss:0.0644
+	Iteration:160 | Mov Avg Loss:0.0649
+	Iteration:170 | Mov Avg Loss:0.0647
+	Iteration:180 | Mov Avg Loss:0.0651
+	Iteration:190 | Mov Avg Loss:0.0651
+
+-------- Tensor Flys at 03/30/2021, 21:38:35 --------
+Config: Scale-4 | Epochs-40 | Learning Rate-0.0001 | Batch Size-1
+Model loaded. Begin from Epoch #2.
+Data Loaded. Quantity of Training Instances:800.
+Training at Epoch #2...
+	Iteration:0 | Mov Avg Loss:0.0627
+	Iteration:10 | Mov Avg Loss:0.0777
+	Iteration:20 | Mov Avg Loss:0.0751
+	Iteration:30 | Mov Avg Loss:0.0750
+	Iteration:40 | Mov Avg Loss:0.0727
+	Iteration:50 | Mov Avg Loss:0.0705
+	Iteration:60 | Mov Avg Loss:0.0711
+	Iteration:70 | Mov Avg Loss:0.0706
+	Iteration:80 | Mov Avg Loss:0.0713
+	Iteration:90 | Mov Avg Loss:0.0708
+	Iteration:100 | Mov Avg Loss:0.0703
+	Iteration:110 | Mov Avg Loss:0.0705
+	Iteration:120 | Mov Avg Loss:0.0697
+	Iteration:130 | Mov Avg Loss:0.0695
+	Iteration:140 | Mov Avg Loss:0.0699
+	Iteration:150 | Mov Avg Loss:0.0694
+	Iteration:160 | Mov Avg Loss:0.0699
+	Iteration:170 | Mov Avg Loss:0.0702
+	Iteration:180 | Mov Avg Loss:0.0696
+	Iteration:190 | Mov Avg Loss:0.0694
+	Iteration:200 | Mov Avg Loss:0.0694
+	Iteration:210 | Mov Avg Loss:0.0688
+	Iteration:220 | Mov Avg Loss:0.0691
+	Iteration:230 | Mov Avg Loss:0.0684
+	Iteration:240 | Mov Avg Loss:0.0684
+	Iteration:250 | Mov Avg Loss:0.0683
+	Iteration:260 | Mov Avg Loss:0.0679
+	Iteration:270 | Mov Avg Loss:0.0675
+	Iteration:280 | Mov Avg Loss:0.0672
+	Iteration:290 | Mov Avg Loss:0.0668
+	Iteration:300 | Mov Avg Loss:0.0669
+	Iteration:310 | Mov Avg Loss:0.0675
+	Iteration:320 | Mov Avg Loss:0.0677
+	Iteration:330 | Mov Avg Loss:0.0677
+	Iteration:340 | Mov Avg Loss:0.0673
+	Iteration:350 | Mov Avg Loss:0.0673
+	Iteration:360 | Mov Avg Loss:0.0670
+	Iteration:370 | Mov Avg Loss:0.0671
+	Iteration:380 | Mov Avg Loss:0.0669
+	Iteration:390 | Mov Avg Loss:0.0670
+	Iteration:400 | Mov Avg Loss:0.0671
+	Iteration:410 | Mov Avg Loss:0.0671
+	Iteration:420 | Mov Avg Loss:0.0673
+	Iteration:430 | Mov Avg Loss:0.0673
+	Iteration:440 | Mov Avg Loss:0.0672
+	Iteration:450 | Mov Avg Loss:0.0672
+	Iteration:460 | Mov Avg Loss:0.0670
+	Iteration:470 | Mov Avg Loss:0.0669
+	Iteration:480 | Mov Avg Loss:0.0670
+	Iteration:490 | Mov Avg Loss:0.0668
+	Iteration:500 | Mov Avg Loss:0.0667
+	Iteration:510 | Mov Avg Loss:0.0665
+	Iteration:520 | Mov Avg Loss:0.0664
+	Iteration:530 | Mov Avg Loss:0.0664
+	Iteration:540 | Mov Avg Loss:0.0665
+	Iteration:550 | Mov Avg Loss:0.0665
+	Iteration:560 | Mov Avg Loss:0.0664
+	Iteration:570 | Mov Avg Loss:0.0664
+	Iteration:580 | Mov Avg Loss:0.0662
+	Iteration:590 | Mov Avg Loss:0.0662
+	Iteration:600 | Mov Avg Loss:0.0661
+	Iteration:610 | Mov Avg Loss:0.0662
+	Iteration:620 | Mov Avg Loss:0.0661
+	Iteration:630 | Mov Avg Loss:0.0660
+	Iteration:640 | Mov Avg Loss:0.0659
+	Iteration:650 | Mov Avg Loss:0.0658
+	Iteration:660 | Mov Avg Loss:0.0659
+	Iteration:670 | Mov Avg Loss:0.0657
+	Iteration:680 | Mov Avg Loss:0.0658
+	Iteration:690 | Mov Avg Loss:0.0657
+	Iteration:700 | Mov Avg Loss:0.0657
+	Iteration:710 | Mov Avg Loss:0.0656
+	Iteration:720 | Mov Avg Loss:0.0656
+
+-------- Tensor Flys at 03/30/2021, 21:49:40 --------
+Config: Scale-4 | Epochs-40 | Learning Rate-0.0001 | Batch Size-1
+Model loaded. Begin from Epoch #2.
+Data Loaded. Quantity of Training Instances:800.
+Training at Epoch #2...
+	Iteration:0 | Mov Avg Loss:0.0628
+	Iteration:10 | Mov Avg Loss:0.0777
+	Iteration:20 | Mov Avg Loss:0.0749
+	Iteration:30 | Mov Avg Loss:0.0748
+	Iteration:40 | Mov Avg Loss:0.0722
+	Iteration:50 | Mov Avg Loss:0.0695
+	Iteration:60 | Mov Avg Loss:0.0701
+	Iteration:70 | Mov Avg Loss:0.0696
+	Iteration:80 | Mov Avg Loss:0.0702
+	Iteration:90 | Mov Avg Loss:0.0700
+	Iteration:100 | Mov Avg Loss:0.0693
+	Iteration:110 | Mov Avg Loss:0.0690
+	Iteration:120 | Mov Avg Loss:0.0678
+	Iteration:130 | Mov Avg Loss:0.0675
+	Iteration:140 | Mov Avg Loss:0.0679
+	Iteration:150 | Mov Avg Loss:0.0673
+	Iteration:160 | Mov Avg Loss:0.0678
+	Iteration:170 | Mov Avg Loss:0.0680
+	Iteration:180 | Mov Avg Loss:0.0676
+	Iteration:190 | Mov Avg Loss:0.0674
+	Iteration:200 | Mov Avg Loss:0.0676
+	Iteration:210 | Mov Avg Loss:0.0671
+	Iteration:220 | Mov Avg Loss:0.0674
+	Iteration:230 | Mov Avg Loss:0.0669
+	Iteration:240 | Mov Avg Loss:0.0672
+	Iteration:250 | Mov Avg Loss:0.0673
+	Iteration:260 | Mov Avg Loss:0.0670
+	Iteration:270 | Mov Avg Loss:0.0664
+	Iteration:280 | Mov Avg Loss:0.0662
+	Iteration:290 | Mov Avg Loss:0.0656
+	Iteration:300 | Mov Avg Loss:0.0657
+	Iteration:310 | Mov Avg Loss:0.0662
+	Iteration:320 | Mov Avg Loss:0.0665
+	Iteration:330 | Mov Avg Loss:0.0665
+	Iteration:340 | Mov Avg Loss:0.0662
+	Iteration:350 | Mov Avg Loss:0.0663
+	Iteration:360 | Mov Avg Loss:0.0661
+	Iteration:370 | Mov Avg Loss:0.0663
+	Iteration:380 | Mov Avg Loss:0.0661
+	Iteration:390 | Mov Avg Loss:0.0661
+Training Loss of the epoch:0.0663
+Model saved.
+Evaluating at Epoch #2...
+Evaluation Loss of the epoch:0.0670
+----------
+Training at Epoch #3...
+	Iteration:0 | Mov Avg Loss:0.0627
+	Iteration:10 | Mov Avg Loss:0.0728
+	Iteration:20 | Mov Avg Loss:0.0704
+	Iteration:30 | Mov Avg Loss:0.0703
+	Iteration:40 | Mov Avg Loss:0.0680
+	Iteration:50 | Mov Avg Loss:0.0650
+	Iteration:60 | Mov Avg Loss:0.0659
+	Iteration:70 | Mov Avg Loss:0.0655
+	Iteration:80 | Mov Avg Loss:0.0666
+	Iteration:90 | Mov Avg Loss:0.0664
+	Iteration:100 | Mov Avg Loss:0.0659
+	Iteration:110 | Mov Avg Loss:0.0660
+	Iteration:120 | Mov Avg Loss:0.0650
+	Iteration:130 | Mov Avg Loss:0.0648
+	Iteration:140 | Mov Avg Loss:0.0651
+	Iteration:150 | Mov Avg Loss:0.0646
+	Iteration:160 | Mov Avg Loss:0.0652
+	Iteration:170 | Mov Avg Loss:0.0655
+	Iteration:180 | Mov Avg Loss:0.0650
+	Iteration:190 | Mov Avg Loss:0.0650
+	Iteration:200 | Mov Avg Loss:0.0654
+	Iteration:210 | Mov Avg Loss:0.0649
+	Iteration:220 | Mov Avg Loss:0.0653
+	Iteration:230 | Mov Avg Loss:0.0649
+	Iteration:240 | Mov Avg Loss:0.0651
+	Iteration:250 | Mov Avg Loss:0.0651
+	Iteration:260 | Mov Avg Loss:0.0648
+	Iteration:270 | Mov Avg Loss:0.0643
+	Iteration:280 | Mov Avg Loss:0.0641
+	Iteration:290 | Mov Avg Loss:0.0636
+	Iteration:300 | Mov Avg Loss:0.0636
+	Iteration:310 | Mov Avg Loss:0.0642
+	Iteration:320 | Mov Avg Loss:0.0644
+	Iteration:330 | Mov Avg Loss:0.0645
+	Iteration:340 | Mov Avg Loss:0.0641
+	Iteration:350 | Mov Avg Loss:0.0642
+	Iteration:360 | Mov Avg Loss:0.0639
+	Iteration:370 | Mov Avg Loss:0.0640
+	Iteration:380 | Mov Avg Loss:0.0638
+	Iteration:390 | Mov Avg Loss:0.0639
+Training Loss of the epoch:0.0641
+Model saved.
+Evaluating at Epoch #3...
+Evaluation Loss of the epoch:0.0653
+----------
+Training at Epoch #4...
+	Iteration:0 | Mov Avg Loss:0.0599
+	Iteration:10 | Mov Avg Loss:0.0707
+	Iteration:20 | Mov Avg Loss:0.0686
+	Iteration:30 | Mov Avg Loss:0.0686
+	Iteration:40 | Mov Avg Loss:0.0670
+	Iteration:50 | Mov Avg Loss:0.0643
+	Iteration:60 | Mov Avg Loss:0.0654
+	Iteration:70 | Mov Avg Loss:0.0649
+	Iteration:80 | Mov Avg Loss:0.0656
+	Iteration:90 | Mov Avg Loss:0.0655
+	Iteration:100 | Mov Avg Loss:0.0647
+	Iteration:110 | Mov Avg Loss:0.0646
+	Iteration:120 | Mov Avg Loss:0.0640
+	Iteration:130 | Mov Avg Loss:0.0639
+	Iteration:140 | Mov Avg Loss:0.0646
+	Iteration:150 | Mov Avg Loss:0.0645
+	Iteration:160 | Mov Avg Loss:0.0651
+	Iteration:170 | Mov Avg Loss:0.0653
+	Iteration:180 | Mov Avg Loss:0.0648
+	Iteration:190 | Mov Avg Loss:0.0646
+	Iteration:200 | Mov Avg Loss:0.0647
+	Iteration:210 | Mov Avg Loss:0.0641
+	Iteration:220 | Mov Avg Loss:0.0644
+	Iteration:230 | Mov Avg Loss:0.0637
+	Iteration:240 | Mov Avg Loss:0.0636
+	Iteration:250 | Mov Avg Loss:0.0636
+	Iteration:260 | Mov Avg Loss:0.0633
+	Iteration:270 | Mov Avg Loss:0.0628
+	Iteration:280 | Mov Avg Loss:0.0625
+	Iteration:290 | Mov Avg Loss:0.0620
+	Iteration:300 | Mov Avg Loss:0.0621
+	Iteration:310 | Mov Avg Loss:0.0627
+	Iteration:320 | Mov Avg Loss:0.0629
+	Iteration:330 | Mov Avg Loss:0.0630
+	Iteration:340 | Mov Avg Loss:0.0627
+	Iteration:350 | Mov Avg Loss:0.0627
+	Iteration:360 | Mov Avg Loss:0.0624
+	Iteration:370 | Mov Avg Loss:0.0625
+	Iteration:380 | Mov Avg Loss:0.0624
+	Iteration:390 | Mov Avg Loss:0.0624
+Training Loss of the epoch:0.0626
+Model saved.
+Evaluating at Epoch #4...
+Evaluation Loss of the epoch:0.0662
+----------
+Training at Epoch #5...
+	Iteration:0 | Mov Avg Loss:0.0590
+	Iteration:10 | Mov Avg Loss:0.0692
+	Iteration:20 | Mov Avg Loss:0.0679
+	Iteration:30 | Mov Avg Loss:0.0682
+	Iteration:40 | Mov Avg Loss:0.0669
+	Iteration:50 | Mov Avg Loss:0.0648
+	Iteration:60 | Mov Avg Loss:0.0656
+	Iteration:70 | Mov Avg Loss:0.0649
+	Iteration:80 | Mov Avg Loss:0.0654
+	Iteration:90 | Mov Avg Loss:0.0650
+	Iteration:100 | Mov Avg Loss:0.0642
+	Iteration:110 | Mov Avg Loss:0.0643
+	Iteration:120 | Mov Avg Loss:0.0634
+	Iteration:130 | Mov Avg Loss:0.0633
+	Iteration:140 | Mov Avg Loss:0.0638
+	Iteration:150 | Mov Avg Loss:0.0634
+	Iteration:160 | Mov Avg Loss:0.0639
+	Iteration:170 | Mov Avg Loss:0.0641
+	Iteration:180 | Mov Avg Loss:0.0637
+	Iteration:190 | Mov Avg Loss:0.0636
+	Iteration:200 | Mov Avg Loss:0.0637
+	Iteration:210 | Mov Avg Loss:0.0631
+	Iteration:220 | Mov Avg Loss:0.0634
+	Iteration:230 | Mov Avg Loss:0.0628
+	Iteration:240 | Mov Avg Loss:0.0627
+	Iteration:250 | Mov Avg Loss:0.0627
+	Iteration:260 | Mov Avg Loss:0.0624
+	Iteration:270 | Mov Avg Loss:0.0620
+	Iteration:280 | Mov Avg Loss:0.0617
+	Iteration:290 | Mov Avg Loss:0.0612
+	Iteration:300 | Mov Avg Loss:0.0613
+	Iteration:310 | Mov Avg Loss:0.0618
+	Iteration:320 | Mov Avg Loss:0.0621
+	Iteration:330 | Mov Avg Loss:0.0622
+	Iteration:340 | Mov Avg Loss:0.0619
+	Iteration:350 | Mov Avg Loss:0.0620
+	Iteration:360 | Mov Avg Loss:0.0617
+	Iteration:370 | Mov Avg Loss:0.0618
+	Iteration:380 | Mov Avg Loss:0.0617
+	Iteration:390 | Mov Avg Loss:0.0618
+Training Loss of the epoch:0.0620
+Model saved.
+Evaluating at Epoch #5...
+Evaluation Loss of the epoch:0.0645
+----------
+Training at Epoch #6...
+	Iteration:0 | Mov Avg Loss:0.0579
+	Iteration:10 | Mov Avg Loss:0.0690
+	Iteration:20 | Mov Avg Loss:0.0670
+	Iteration:30 | Mov Avg Loss:0.0672
+	Iteration:40 | Mov Avg Loss:0.0652
+	Iteration:50 | Mov Avg Loss:0.0626
+	Iteration:60 | Mov Avg Loss:0.0636
+	Iteration:70 | Mov Avg Loss:0.0629
+	Iteration:80 | Mov Avg Loss:0.0635
+	Iteration:90 | Mov Avg Loss:0.0632
+	Iteration:100 | Mov Avg Loss:0.0625
+	Iteration:110 | Mov Avg Loss:0.0624
+	Iteration:120 | Mov Avg Loss:0.0613
+	Iteration:130 | Mov Avg Loss:0.0612
+	Iteration:140 | Mov Avg Loss:0.0616
+	Iteration:150 | Mov Avg Loss:0.0612
+	Iteration:160 | Mov Avg Loss:0.0617
+	Iteration:170 | Mov Avg Loss:0.0620
+	Iteration:180 | Mov Avg Loss:0.0616
+	Iteration:190 | Mov Avg Loss:0.0615
+	Iteration:200 | Mov Avg Loss:0.0617
+	Iteration:210 | Mov Avg Loss:0.0612
+	Iteration:220 | Mov Avg Loss:0.0615
+	Iteration:230 | Mov Avg Loss:0.0609
+	Iteration:240 | Mov Avg Loss:0.0609
+	Iteration:250 | Mov Avg Loss:0.0609
+	Iteration:260 | Mov Avg Loss:0.0607
+	Iteration:270 | Mov Avg Loss:0.0603
+	Iteration:280 | Mov Avg Loss:0.0601
+	Iteration:290 | Mov Avg Loss:0.0596
+	Iteration:300 | Mov Avg Loss:0.0597
+	Iteration:310 | Mov Avg Loss:0.0603
+	Iteration:320 | Mov Avg Loss:0.0606
+	Iteration:330 | Mov Avg Loss:0.0607
+	Iteration:340 | Mov Avg Loss:0.0604
+	Iteration:350 | Mov Avg Loss:0.0605
+	Iteration:360 | Mov Avg Loss:0.0604
+	Iteration:370 | Mov Avg Loss:0.0605
+	Iteration:380 | Mov Avg Loss:0.0603
+	Iteration:390 | Mov Avg Loss:0.0604
+Training Loss of the epoch:0.0606
+Model saved.
+Evaluating at Epoch #6...
+Evaluation Loss of the epoch:0.0649
+----------
+Training at Epoch #7...
+	Iteration:0 | Mov Avg Loss:0.0576
+	Iteration:10 | Mov Avg Loss:0.0682
+	Iteration:20 | Mov Avg Loss:0.0659
+	Iteration:30 | Mov Avg Loss:0.0662
+	Iteration:40 | Mov Avg Loss:0.0641
+	Iteration:50 | Mov Avg Loss:0.0612
+	Iteration:60 | Mov Avg Loss:0.0622
+	Iteration:70 | Mov Avg Loss:0.0617
+	Iteration:80 | Mov Avg Loss:0.0623
+	Iteration:90 | Mov Avg Loss:0.0622
+	Iteration:100 | Mov Avg Loss:0.0616
+	Iteration:110 | Mov Avg Loss:0.0618
+	Iteration:120 | Mov Avg Loss:0.0609
+	Iteration:130 | Mov Avg Loss:0.0609
+	Iteration:140 | Mov Avg Loss:0.0613
+	Iteration:150 | Mov Avg Loss:0.0609
+	Iteration:160 | Mov Avg Loss:0.0615
+	Iteration:170 | Mov Avg Loss:0.0618
+	Iteration:180 | Mov Avg Loss:0.0614
+	Iteration:190 | Mov Avg Loss:0.0613
+	Iteration:200 | Mov Avg Loss:0.0615
+	Iteration:210 | Mov Avg Loss:0.0609
+	Iteration:220 | Mov Avg Loss:0.0612
+	Iteration:230 | Mov Avg Loss:0.0606
+	Iteration:240 | Mov Avg Loss:0.0605
+	Iteration:250 | Mov Avg Loss:0.0605
+	Iteration:260 | Mov Avg Loss:0.0603
+	Iteration:270 | Mov Avg Loss:0.0598
+	Iteration:280 | Mov Avg Loss:0.0596
+	Iteration:290 | Mov Avg Loss:0.0591
+	Iteration:300 | Mov Avg Loss:0.0592
+	Iteration:310 | Mov Avg Loss:0.0598
+	Iteration:320 | Mov Avg Loss:0.0601
+	Iteration:330 | Mov Avg Loss:0.0602
+	Iteration:340 | Mov Avg Loss:0.0599
+	Iteration:350 | Mov Avg Loss:0.0600
+	Iteration:360 | Mov Avg Loss:0.0598
+	Iteration:370 | Mov Avg Loss:0.0599
+	Iteration:380 | Mov Avg Loss:0.0598
+	Iteration:390 | Mov Avg Loss:0.0599
+Training Loss of the epoch:0.0601
+Model saved.
+Evaluating at Epoch #7...
+Evaluation Loss of the epoch:0.0611
+----------
+Training at Epoch #8...
+	Iteration:0 | Mov Avg Loss:0.0562
+	Iteration:10 | Mov Avg Loss:0.0662
+	Iteration:20 | Mov Avg Loss:0.0645
+	Iteration:30 | Mov Avg Loss:0.0647
+	Iteration:40 | Mov Avg Loss:0.0630
+	Iteration:50 | Mov Avg Loss:0.0604
+	Iteration:60 | Mov Avg Loss:0.0615
+	Iteration:70 | Mov Avg Loss:0.0610
+	Iteration:80 | Mov Avg Loss:0.0616
+	Iteration:90 | Mov Avg Loss:0.0615
+	Iteration:100 | Mov Avg Loss:0.0609
+	Iteration:110 | Mov Avg Loss:0.0610
+	Iteration:120 | Mov Avg Loss:0.0600
+	Iteration:130 | Mov Avg Loss:0.0600
+	Iteration:140 | Mov Avg Loss:0.0603
+	Iteration:150 | Mov Avg Loss:0.0599
+	Iteration:160 | Mov Avg Loss:0.0604
+	Iteration:170 | Mov Avg Loss:0.0607
+	Iteration:180 | Mov Avg Loss:0.0603
+	Iteration:190 | Mov Avg Loss:0.0602
+	Iteration:200 | Mov Avg Loss:0.0603
+	Iteration:210 | Mov Avg Loss:0.0598
+	Iteration:220 | Mov Avg Loss:0.0602
+	Iteration:230 | Mov Avg Loss:0.0595
+	Iteration:240 | Mov Avg Loss:0.0595
+	Iteration:250 | Mov Avg Loss:0.0595
+	Iteration:260 | Mov Avg Loss:0.0592
+	Iteration:270 | Mov Avg Loss:0.0587
+	Iteration:280 | Mov Avg Loss:0.0585
+	Iteration:290 | Mov Avg Loss:0.0581
+	Iteration:300 | Mov Avg Loss:0.0582
+	Iteration:310 | Mov Avg Loss:0.0588
+	Iteration:320 | Mov Avg Loss:0.0591
+	Iteration:330 | Mov Avg Loss:0.0592
+	Iteration:340 | Mov Avg Loss:0.0589
+	Iteration:350 | Mov Avg Loss:0.0590
+	Iteration:360 | Mov Avg Loss:0.0588
+	Iteration:370 | Mov Avg Loss:0.0589
+	Iteration:380 | Mov Avg Loss:0.0588
+	Iteration:390 | Mov Avg Loss:0.0589
+Training Loss of the epoch:0.0591
+Model saved.
+Evaluating at Epoch #8...
+Evaluation Loss of the epoch:0.0616
+----------
+Training at Epoch #9...
+	Iteration:0 | Mov Avg Loss:0.0558
+	Iteration:10 | Mov Avg Loss:0.0657
+	Iteration:20 | Mov Avg Loss:0.0642
+	Iteration:30 | Mov Avg Loss:0.0645
+	Iteration:40 | Mov Avg Loss:0.0625
+	Iteration:50 | Mov Avg Loss:0.0598
+	Iteration:60 | Mov Avg Loss:0.0608
+	Iteration:70 | Mov Avg Loss:0.0603
+	Iteration:80 | Mov Avg Loss:0.0609
+	Iteration:90 | Mov Avg Loss:0.0607
+	Iteration:100 | Mov Avg Loss:0.0601
+	Iteration:110 | Mov Avg Loss:0.0601
+	Iteration:120 | Mov Avg Loss:0.0593
+	Iteration:130 | Mov Avg Loss:0.0593
+	Iteration:140 | Mov Avg Loss:0.0597
+	Iteration:150 | Mov Avg Loss:0.0593
+	Iteration:160 | Mov Avg Loss:0.0598
+	Iteration:170 | Mov Avg Loss:0.0602
+	Iteration:180 | Mov Avg Loss:0.0598
+	Iteration:190 | Mov Avg Loss:0.0597
+	Iteration:200 | Mov Avg Loss:0.0599
+	Iteration:210 | Mov Avg Loss:0.0593
+	Iteration:220 | Mov Avg Loss:0.0597
+	Iteration:230 | Mov Avg Loss:0.0591
+	Iteration:240 | Mov Avg Loss:0.0590
+	Iteration:250 | Mov Avg Loss:0.0590
+	Iteration:260 | Mov Avg Loss:0.0588
+	Iteration:270 | Mov Avg Loss:0.0583
+	Iteration:280 | Mov Avg Loss:0.0581
+	Iteration:290 | Mov Avg Loss:0.0576
+	Iteration:300 | Mov Avg Loss:0.0577
+	Iteration:310 | Mov Avg Loss:0.0583
+	Iteration:320 | Mov Avg Loss:0.0586
+	Iteration:330 | Mov Avg Loss:0.0587
+	Iteration:340 | Mov Avg Loss:0.0584
+	Iteration:350 | Mov Avg Loss:0.0585
+	Iteration:360 | Mov Avg Loss:0.0583
+	Iteration:370 | Mov Avg Loss:0.0585
+	Iteration:380 | Mov Avg Loss:0.0583
+	Iteration:390 | Mov Avg Loss:0.0584
+Training Loss of the epoch:0.0586
+Model saved.
+Evaluating at Epoch #9...
+Evaluation Loss of the epoch:0.0606
+----------
+Training at Epoch #10...
+	Iteration:0 | Mov Avg Loss:0.0552
+	Iteration:10 | Mov Avg Loss:0.0654
+	Iteration:20 | Mov Avg Loss:0.0636
+	Iteration:30 | Mov Avg Loss:0.0639
+	Iteration:40 | Mov Avg Loss:0.0619
+	Iteration:50 | Mov Avg Loss:0.0594
+	Iteration:60 | Mov Avg Loss:0.0604
+	Iteration:70 | Mov Avg Loss:0.0599
+	Iteration:80 | Mov Avg Loss:0.0605
+	Iteration:90 | Mov Avg Loss:0.0604
+	Iteration:100 | Mov Avg Loss:0.0596
+	Iteration:110 | Mov Avg Loss:0.0594
+	Iteration:120 | Mov Avg Loss:0.0584
+	Iteration:130 | Mov Avg Loss:0.0584
+	Iteration:140 | Mov Avg Loss:0.0588
+	Iteration:150 | Mov Avg Loss:0.0583
+	Iteration:160 | Mov Avg Loss:0.0590
+	Iteration:170 | Mov Avg Loss:0.0593
+	Iteration:180 | Mov Avg Loss:0.0588
+	Iteration:190 | Mov Avg Loss:0.0587
+	Iteration:200 | Mov Avg Loss:0.0589
+	Iteration:210 | Mov Avg Loss:0.0584
+	Iteration:220 | Mov Avg Loss:0.0588
+	Iteration:230 | Mov Avg Loss:0.0582
+	Iteration:240 | Mov Avg Loss:0.0582
+	Iteration:250 | Mov Avg Loss:0.0582
+	Iteration:260 | Mov Avg Loss:0.0580
+	Iteration:270 | Mov Avg Loss:0.0575
+	Iteration:280 | Mov Avg Loss:0.0573
+	Iteration:290 | Mov Avg Loss:0.0569
+	Iteration:300 | Mov Avg Loss:0.0570
+	Iteration:310 | Mov Avg Loss:0.0576
+	Iteration:320 | Mov Avg Loss:0.0579
+	Iteration:330 | Mov Avg Loss:0.0580
+	Iteration:340 | Mov Avg Loss:0.0577
+	Iteration:350 | Mov Avg Loss:0.0578
+	Iteration:360 | Mov Avg Loss:0.0576
+	Iteration:370 | Mov Avg Loss:0.0577
+	Iteration:380 | Mov Avg Loss:0.0576
+	Iteration:390 | Mov Avg Loss:0.0577
+Training Loss of the epoch:0.0578
+Model saved.
+Evaluating at Epoch #10...
+Evaluation Loss of the epoch:0.0593
+----------
+Training at Epoch #11...
+	Iteration:0 | Mov Avg Loss:0.0549
+	Iteration:10 | Mov Avg Loss:0.0646
+	Iteration:20 | Mov Avg Loss:0.0629
+	Iteration:30 | Mov Avg Loss:0.0632
+	Iteration:40 | Mov Avg Loss:0.0612
+	Iteration:50 | Mov Avg Loss:0.0587
+	Iteration:60 | Mov Avg Loss:0.0598
+	Iteration:70 | Mov Avg Loss:0.0593
+	Iteration:80 | Mov Avg Loss:0.0600
+	Iteration:90 | Mov Avg Loss:0.0599
+	Iteration:100 | Mov Avg Loss:0.0592
+	Iteration:110 | Mov Avg Loss:0.0590
+	Iteration:120 | Mov Avg Loss:0.0580
+	Iteration:130 | Mov Avg Loss:0.0580
+	Iteration:140 | Mov Avg Loss:0.0584
+	Iteration:150 | Mov Avg Loss:0.0579
+	Iteration:160 | Mov Avg Loss:0.0585
+	Iteration:170 | Mov Avg Loss:0.0588
+	Iteration:180 | Mov Avg Loss:0.0583
+	Iteration:190 | Mov Avg Loss:0.0582
+	Iteration:200 | Mov Avg Loss:0.0584
+	Iteration:210 | Mov Avg Loss:0.0579
+	Iteration:220 | Mov Avg Loss:0.0583
+	Iteration:230 | Mov Avg Loss:0.0577
+	Iteration:240 | Mov Avg Loss:0.0577
+	Iteration:250 | Mov Avg Loss:0.0577
+	Iteration:260 | Mov Avg Loss:0.0575
+	Iteration:270 | Mov Avg Loss:0.0570
+	Iteration:280 | Mov Avg Loss:0.0568
+	Iteration:290 | Mov Avg Loss:0.0564
+	Iteration:300 | Mov Avg Loss:0.0565
+	Iteration:310 | Mov Avg Loss:0.0571
+	Iteration:320 | Mov Avg Loss:0.0574
+	Iteration:330 | Mov Avg Loss:0.0576
+	Iteration:340 | Mov Avg Loss:0.0573
+	Iteration:350 | Mov Avg Loss:0.0574
+	Iteration:360 | Mov Avg Loss:0.0572
+	Iteration:370 | Mov Avg Loss:0.0573
+	Iteration:380 | Mov Avg Loss:0.0572
+	Iteration:390 | Mov Avg Loss:0.0573
+Training Loss of the epoch:0.0575
+Model saved.
+Evaluating at Epoch #11...
+Evaluation Loss of the epoch:0.0591
+----------
+Training at Epoch #12...
+	Iteration:0 | Mov Avg Loss:0.0543
+	Iteration:10 | Mov Avg Loss:0.0639
+	Iteration:20 | Mov Avg Loss:0.0623
+	Iteration:30 | Mov Avg Loss:0.0626
+	Iteration:40 | Mov Avg Loss:0.0606
+	Iteration:50 | Mov Avg Loss:0.0581
+	Iteration:60 | Mov Avg Loss:0.0592
+	Iteration:70 | Mov Avg Loss:0.0587
+	Iteration:80 | Mov Avg Loss:0.0595
+	Iteration:90 | Mov Avg Loss:0.0594
+	Iteration:100 | Mov Avg Loss:0.0587
+	Iteration:110 | Mov Avg Loss:0.0586
+	Iteration:120 | Mov Avg Loss:0.0576
+	Iteration:130 | Mov Avg Loss:0.0576
+	Iteration:140 | Mov Avg Loss:0.0579
+	Iteration:150 | Mov Avg Loss:0.0574
+	Iteration:160 | Mov Avg Loss:0.0580
+	Iteration:170 | Mov Avg Loss:0.0583
+	Iteration:180 | Mov Avg Loss:0.0579
+	Iteration:190 | Mov Avg Loss:0.0578
+	Iteration:200 | Mov Avg Loss:0.0580
+	Iteration:210 | Mov Avg Loss:0.0575
+	Iteration:220 | Mov Avg Loss:0.0579
+	Iteration:230 | Mov Avg Loss:0.0573
+	Iteration:240 | Mov Avg Loss:0.0573
+	Iteration:250 | Mov Avg Loss:0.0574
+	Iteration:260 | Mov Avg Loss:0.0572
+	Iteration:270 | Mov Avg Loss:0.0568
+	Iteration:280 | Mov Avg Loss:0.0566
+	Iteration:290 | Mov Avg Loss:0.0562
+	Iteration:300 | Mov Avg Loss:0.0564
+	Iteration:310 | Mov Avg Loss:0.0570
+	Iteration:320 | Mov Avg Loss:0.0573
+	Iteration:330 | Mov Avg Loss:0.0574
+	Iteration:340 | Mov Avg Loss:0.0571
+	Iteration:350 | Mov Avg Loss:0.0572
+	Iteration:360 | Mov Avg Loss:0.0569
+	Iteration:370 | Mov Avg Loss:0.0570
+	Iteration:380 | Mov Avg Loss:0.0568
+	Iteration:390 | Mov Avg Loss:0.0569
+Training Loss of the epoch:0.0571
+Model saved.
+Evaluating at Epoch #12...
+Evaluation Loss of the epoch:0.0583
+----------
+Training at Epoch #13...
+	Iteration:0 | Mov Avg Loss:0.0539
+	Iteration:10 | Mov Avg Loss:0.0627
+	Iteration:20 | Mov Avg Loss:0.0614
+	Iteration:30 | Mov Avg Loss:0.0618
+	Iteration:40 | Mov Avg Loss:0.0600
+	Iteration:50 | Mov Avg Loss:0.0576
+	Iteration:60 | Mov Avg Loss:0.0587
+	Iteration:70 | Mov Avg Loss:0.0582
+	Iteration:80 | Mov Avg Loss:0.0590
+	Iteration:90 | Mov Avg Loss:0.0589
+	Iteration:100 | Mov Avg Loss:0.0582
+	Iteration:110 | Mov Avg Loss:0.0581
+	Iteration:120 | Mov Avg Loss:0.0571
+	Iteration:130 | Mov Avg Loss:0.0572
+	Iteration:140 | Mov Avg Loss:0.0575
+	Iteration:150 | Mov Avg Loss:0.0570
+	Iteration:160 | Mov Avg Loss:0.0576
+	Iteration:170 | Mov Avg Loss:0.0580
+	Iteration:180 | Mov Avg Loss:0.0575
+	Iteration:190 | Mov Avg Loss:0.0575
+	Iteration:200 | Mov Avg Loss:0.0577
+	Iteration:210 | Mov Avg Loss:0.0572
+	Iteration:220 | Mov Avg Loss:0.0576
+	Iteration:230 | Mov Avg Loss:0.0570
+	Iteration:240 | Mov Avg Loss:0.0570
+	Iteration:250 | Mov Avg Loss:0.0571
+	Iteration:260 | Mov Avg Loss:0.0569
+	Iteration:270 | Mov Avg Loss:0.0564
+	Iteration:280 | Mov Avg Loss:0.0562
+	Iteration:290 | Mov Avg Loss:0.0558
+	Iteration:300 | Mov Avg Loss:0.0559
+	Iteration:310 | Mov Avg Loss:0.0566
+	Iteration:320 | Mov Avg Loss:0.0569
+	Iteration:330 | Mov Avg Loss:0.0570
+	Iteration:340 | Mov Avg Loss:0.0567
+	Iteration:350 | Mov Avg Loss:0.0568
+	Iteration:360 | Mov Avg Loss:0.0565
+	Iteration:370 | Mov Avg Loss:0.0566
+	Iteration:380 | Mov Avg Loss:0.0564
+	Iteration:390 | Mov Avg Loss:0.0565
+Training Loss of the epoch:0.0567
+Model saved.
+Evaluating at Epoch #13...
+Evaluation Loss of the epoch:0.0582
+----------
+Training at Epoch #14...
+	Iteration:0 | Mov Avg Loss:0.0540
+	Iteration:10 | Mov Avg Loss:0.0631
+	Iteration:20 | Mov Avg Loss:0.0617
+	Iteration:30 | Mov Avg Loss:0.0621
+	Iteration:40 | Mov Avg Loss:0.0601
+	Iteration:50 | Mov Avg Loss:0.0576
+	Iteration:60 | Mov Avg Loss:0.0586
+	Iteration:70 | Mov Avg Loss:0.0581
+	Iteration:80 | Mov Avg Loss:0.0588
+	Iteration:90 | Mov Avg Loss:0.0587
+	Iteration:100 | Mov Avg Loss:0.0580
+	Iteration:110 | Mov Avg Loss:0.0577
+	Iteration:120 | Mov Avg Loss:0.0567
+	Iteration:130 | Mov Avg Loss:0.0568
+	Iteration:140 | Mov Avg Loss:0.0571
+	Iteration:150 | Mov Avg Loss:0.0567
+	Iteration:160 | Mov Avg Loss:0.0573
+	Iteration:170 | Mov Avg Loss:0.0576
+	Iteration:180 | Mov Avg Loss:0.0572
+	Iteration:190 | Mov Avg Loss:0.0572
+	Iteration:200 | Mov Avg Loss:0.0574
+	Iteration:210 | Mov Avg Loss:0.0569
+	Iteration:220 | Mov Avg Loss:0.0573
+	Iteration:230 | Mov Avg Loss:0.0567
+	Iteration:240 | Mov Avg Loss:0.0567
+	Iteration:250 | Mov Avg Loss:0.0567
+	Iteration:260 | Mov Avg Loss:0.0565
+	Iteration:270 | Mov Avg Loss:0.0561
+	Iteration:280 | Mov Avg Loss:0.0559
+	Iteration:290 | Mov Avg Loss:0.0555
+	Iteration:300 | Mov Avg Loss:0.0556
+	Iteration:310 | Mov Avg Loss:0.0562
+	Iteration:320 | Mov Avg Loss:0.0565
+	Iteration:330 | Mov Avg Loss:0.0567
+	Iteration:340 | Mov Avg Loss:0.0564
+	Iteration:350 | Mov Avg Loss:0.0565
+	Iteration:360 | Mov Avg Loss:0.0562
+	Iteration:370 | Mov Avg Loss:0.0563
+	Iteration:380 | Mov Avg Loss:0.0562
+	Iteration:390 | Mov Avg Loss:0.0563
+Training Loss of the epoch:0.0564
+Model saved.
+Evaluating at Epoch #14...
+Evaluation Loss of the epoch:0.0582
+----------
+Training at Epoch #15...
+	Iteration:0 | Mov Avg Loss:0.0536
+	Iteration:10 | Mov Avg Loss:0.0626
+	Iteration:20 | Mov Avg Loss:0.0613
+	Iteration:30 | Mov Avg Loss:0.0617
+	Iteration:40 | Mov Avg Loss:0.0599
+	Iteration:50 | Mov Avg Loss:0.0575
+	Iteration:60 | Mov Avg Loss:0.0587
+	Iteration:70 | Mov Avg Loss:0.0581
+	Iteration:80 | Mov Avg Loss:0.0588
+	Iteration:90 | Mov Avg Loss:0.0587
+	Iteration:100 | Mov Avg Loss:0.0580
+	Iteration:110 | Mov Avg Loss:0.0578
+	Iteration:120 | Mov Avg Loss:0.0567
+	Iteration:130 | Mov Avg Loss:0.0568
+	Iteration:140 | Mov Avg Loss:0.0571
+	Iteration:150 | Mov Avg Loss:0.0567
+	Iteration:160 | Mov Avg Loss:0.0573
+	Iteration:170 | Mov Avg Loss:0.0576
+	Iteration:180 | Mov Avg Loss:0.0572
+	Iteration:190 | Mov Avg Loss:0.0571
+	Iteration:200 | Mov Avg Loss:0.0574
+	Iteration:210 | Mov Avg Loss:0.0569
+	Iteration:220 | Mov Avg Loss:0.0572
+	Iteration:230 | Mov Avg Loss:0.0566
+	Iteration:240 | Mov Avg Loss:0.0566
+	Iteration:250 | Mov Avg Loss:0.0566
+	Iteration:260 | Mov Avg Loss:0.0564
+	Iteration:270 | Mov Avg Loss:0.0559
+	Iteration:280 | Mov Avg Loss:0.0558
+	Iteration:290 | Mov Avg Loss:0.0553
+	Iteration:300 | Mov Avg Loss:0.0554
+	Iteration:310 | Mov Avg Loss:0.0561
+	Iteration:320 | Mov Avg Loss:0.0564
+	Iteration:330 | Mov Avg Loss:0.0565
+	Iteration:340 | Mov Avg Loss:0.0562
+	Iteration:350 | Mov Avg Loss:0.0563
+	Iteration:360 | Mov Avg Loss:0.0560
+	Iteration:370 | Mov Avg Loss:0.0561
+	Iteration:380 | Mov Avg Loss:0.0560
+	Iteration:390 | Mov Avg Loss:0.0561
+Training Loss of the epoch:0.0562
+Model saved.
+Evaluating at Epoch #15...
+Evaluation Loss of the epoch:0.0576
+----------
+Training at Epoch #16...
+	Iteration:0 | Mov Avg Loss:0.0536
+	Iteration:10 | Mov Avg Loss:0.0622
+	Iteration:20 | Mov Avg Loss:0.0610
+	Iteration:30 | Mov Avg Loss:0.0614
+	Iteration:40 | Mov Avg Loss:0.0595
+	Iteration:50 | Mov Avg Loss:0.0570
+	Iteration:60 | Mov Avg Loss:0.0581
+	Iteration:70 | Mov Avg Loss:0.0576
+	Iteration:80 | Mov Avg Loss:0.0584
+	Iteration:90 | Mov Avg Loss:0.0582
+	Iteration:100 | Mov Avg Loss:0.0575
+	Iteration:110 | Mov Avg Loss:0.0574
+	Iteration:120 | Mov Avg Loss:0.0564
+	Iteration:130 | Mov Avg Loss:0.0565
+	Iteration:140 | Mov Avg Loss:0.0568
+	Iteration:150 | Mov Avg Loss:0.0564
+	Iteration:160 | Mov Avg Loss:0.0570
+	Iteration:170 | Mov Avg Loss:0.0573
+	Iteration:180 | Mov Avg Loss:0.0569
+	Iteration:190 | Mov Avg Loss:0.0568
+	Iteration:200 | Mov Avg Loss:0.0570
+	Iteration:210 | Mov Avg Loss:0.0565
+	Iteration:220 | Mov Avg Loss:0.0569
+	Iteration:230 | Mov Avg Loss:0.0563
+	Iteration:240 | Mov Avg Loss:0.0563
+	Iteration:250 | Mov Avg Loss:0.0563
+	Iteration:260 | Mov Avg Loss:0.0561
+	Iteration:270 | Mov Avg Loss:0.0557
+	Iteration:280 | Mov Avg Loss:0.0555
+	Iteration:290 | Mov Avg Loss:0.0551
+	Iteration:300 | Mov Avg Loss:0.0552
+	Iteration:310 | Mov Avg Loss:0.0558
+	Iteration:320 | Mov Avg Loss:0.0561
+	Iteration:330 | Mov Avg Loss:0.0563
+	Iteration:340 | Mov Avg Loss:0.0559
+	Iteration:350 | Mov Avg Loss:0.0560
+	Iteration:360 | Mov Avg Loss:0.0558
+	Iteration:370 | Mov Avg Loss:0.0559
+	Iteration:380 | Mov Avg Loss:0.0557
+	Iteration:390 | Mov Avg Loss:0.0558
+Training Loss of the epoch:0.0560
+Model saved.
+Evaluating at Epoch #16...
+Evaluation Loss of the epoch:0.0569
+----------
+Training at Epoch #17...
+	Iteration:0 | Mov Avg Loss:0.0531
+	Iteration:10 | Mov Avg Loss:0.0619
+	Iteration:20 | Mov Avg Loss:0.0607
+	Iteration:30 | Mov Avg Loss:0.0612
+	Iteration:40 | Mov Avg Loss:0.0594
+	Iteration:50 | Mov Avg Loss:0.0570
+	Iteration:60 | Mov Avg Loss:0.0581
+	Iteration:70 | Mov Avg Loss:0.0575
+	Iteration:80 | Mov Avg Loss:0.0583
+	Iteration:90 | Mov Avg Loss:0.0581
+	Iteration:100 | Mov Avg Loss:0.0574
+	Iteration:110 | Mov Avg Loss:0.0572
+	Iteration:120 | Mov Avg Loss:0.0562
+	Iteration:130 | Mov Avg Loss:0.0563
+	Iteration:140 | Mov Avg Loss:0.0566
+	Iteration:150 | Mov Avg Loss:0.0562
+	Iteration:160 | Mov Avg Loss:0.0568
+	Iteration:170 | Mov Avg Loss:0.0571
+	Iteration:180 | Mov Avg Loss:0.0567
+	Iteration:190 | Mov Avg Loss:0.0566
+	Iteration:200 | Mov Avg Loss:0.0569
+	Iteration:210 | Mov Avg Loss:0.0564
+	Iteration:220 | Mov Avg Loss:0.0567
+	Iteration:230 | Mov Avg Loss:0.0562
+	Iteration:240 | Mov Avg Loss:0.0561
+	Iteration:250 | Mov Avg Loss:0.0562
+	Iteration:260 | Mov Avg Loss:0.0560
+	Iteration:270 | Mov Avg Loss:0.0555
+	Iteration:280 | Mov Avg Loss:0.0553
+	Iteration:290 | Mov Avg Loss:0.0549
+	Iteration:300 | Mov Avg Loss:0.0550
+	Iteration:310 | Mov Avg Loss:0.0556
+	Iteration:320 | Mov Avg Loss:0.0560
+	Iteration:330 | Mov Avg Loss:0.0561
+	Iteration:340 | Mov Avg Loss:0.0558
+	Iteration:350 | Mov Avg Loss:0.0559
+	Iteration:360 | Mov Avg Loss:0.0556
+	Iteration:370 | Mov Avg Loss:0.0557
+	Iteration:380 | Mov Avg Loss:0.0556
+	Iteration:390 | Mov Avg Loss:0.0557
+Training Loss of the epoch:0.0558
+Model saved.
+Evaluating at Epoch #17...
+Evaluation Loss of the epoch:0.0566
+----------
+Training at Epoch #18...
+	Iteration:0 | Mov Avg Loss:0.0530
+	Iteration:10 | Mov Avg Loss:0.0615
+	Iteration:20 | Mov Avg Loss:0.0605
+	Iteration:30 | Mov Avg Loss:0.0609
+	Iteration:40 | Mov Avg Loss:0.0592
+	Iteration:50 | Mov Avg Loss:0.0568
+	Iteration:60 | Mov Avg Loss:0.0580
+	Iteration:70 | Mov Avg Loss:0.0574
+	Iteration:80 | Mov Avg Loss:0.0581
+	Iteration:90 | Mov Avg Loss:0.0579
+	Iteration:100 | Mov Avg Loss:0.0572
+	Iteration:110 | Mov Avg Loss:0.0570
+	Iteration:120 | Mov Avg Loss:0.0560
+	Iteration:130 | Mov Avg Loss:0.0560
+	Iteration:140 | Mov Avg Loss:0.0564
+	Iteration:150 | Mov Avg Loss:0.0560
+	Iteration:160 | Mov Avg Loss:0.0566
+	Iteration:170 | Mov Avg Loss:0.0569
+	Iteration:180 | Mov Avg Loss:0.0566
+	Iteration:190 | Mov Avg Loss:0.0565
+	Iteration:200 | Mov Avg Loss:0.0568
+	Iteration:210 | Mov Avg Loss:0.0563
+	Iteration:220 | Mov Avg Loss:0.0566
+	Iteration:230 | Mov Avg Loss:0.0560
+	Iteration:240 | Mov Avg Loss:0.0560
+	Iteration:250 | Mov Avg Loss:0.0561
+	Iteration:260 | Mov Avg Loss:0.0558
+	Iteration:270 | Mov Avg Loss:0.0554
+	Iteration:280 | Mov Avg Loss:0.0552
+	Iteration:290 | Mov Avg Loss:0.0548
+	Iteration:300 | Mov Avg Loss:0.0549
+	Iteration:310 | Mov Avg Loss:0.0555
+	Iteration:320 | Mov Avg Loss:0.0558
+	Iteration:330 | Mov Avg Loss:0.0560
+	Iteration:340 | Mov Avg Loss:0.0557
+	Iteration:350 | Mov Avg Loss:0.0558
+	Iteration:360 | Mov Avg Loss:0.0555
+	Iteration:370 | Mov Avg Loss:0.0556
+	Iteration:380 | Mov Avg Loss:0.0554
+	Iteration:390 | Mov Avg Loss:0.0555
+Training Loss of the epoch:0.0557
+Model saved.
+Evaluating at Epoch #18...
+Evaluation Loss of the epoch:0.0567
+----------
+Training at Epoch #19...
+	Iteration:0 | Mov Avg Loss:0.0531
+	Iteration:10 | Mov Avg Loss:0.0614
+	Iteration:20 | Mov Avg Loss:0.0604
+	Iteration:30 | Mov Avg Loss:0.0608
+	Iteration:40 | Mov Avg Loss:0.0589
+	Iteration:50 | Mov Avg Loss:0.0564
+	Iteration:60 | Mov Avg Loss:0.0576
+	Iteration:70 | Mov Avg Loss:0.0570
+	Iteration:80 | Mov Avg Loss:0.0578
+	Iteration:90 | Mov Avg Loss:0.0577
+	Iteration:100 | Mov Avg Loss:0.0569
+	Iteration:110 | Mov Avg Loss:0.0567
+	Iteration:120 | Mov Avg Loss:0.0557
+	Iteration:130 | Mov Avg Loss:0.0558
+	Iteration:140 | Mov Avg Loss:0.0561
+	Iteration:150 | Mov Avg Loss:0.0557
+	Iteration:160 | Mov Avg Loss:0.0563
+	Iteration:170 | Mov Avg Loss:0.0567
+	Iteration:180 | Mov Avg Loss:0.0563
+	Iteration:190 | Mov Avg Loss:0.0562
+	Iteration:200 | Mov Avg Loss:0.0564
+	Iteration:210 | Mov Avg Loss:0.0559
+	Iteration:220 | Mov Avg Loss:0.0563
+	Iteration:230 | Mov Avg Loss:0.0558
+	Iteration:240 | Mov Avg Loss:0.0557
+	Iteration:250 | Mov Avg Loss:0.0558
+	Iteration:260 | Mov Avg Loss:0.0556
+	Iteration:270 | Mov Avg Loss:0.0551
+	Iteration:280 | Mov Avg Loss:0.0550
+	Iteration:290 | Mov Avg Loss:0.0545
+	Iteration:300 | Mov Avg Loss:0.0546
+	Iteration:310 | Mov Avg Loss:0.0553
+	Iteration:320 | Mov Avg Loss:0.0556
+	Iteration:330 | Mov Avg Loss:0.0557
+	Iteration:340 | Mov Avg Loss:0.0554
+	Iteration:350 | Mov Avg Loss:0.0555
+	Iteration:360 | Mov Avg Loss:0.0553
+	Iteration:370 | Mov Avg Loss:0.0554
+	Iteration:380 | Mov Avg Loss:0.0552
+	Iteration:390 | Mov Avg Loss:0.0553
+Training Loss of the epoch:0.0555
+Model saved.
+Evaluating at Epoch #19...
+Evaluation Loss of the epoch:0.0565
+----------
+Training at Epoch #20...
+	Iteration:0 | Mov Avg Loss:0.0530
+	Iteration:10 | Mov Avg Loss:0.0612
+	Iteration:20 | Mov Avg Loss:0.0602
+	Iteration:30 | Mov Avg Loss:0.0606
+	Iteration:40 | Mov Avg Loss:0.0588
