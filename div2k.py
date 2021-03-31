@@ -9,7 +9,7 @@ from utils import getValTransforms, getTrainTransforms
 
 
 splits = ["valid", "train"]
-DIV2kBasePath = '/Users/kenzhang/Downloads'
+DIV2kBasePath = '/home/shanyizhang/Documents/div2k'
 REDUCTION = 6
 # Data Available at https://data.vision.ee.ethz.ch/cvl/DIV2K/
 

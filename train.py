@@ -11,7 +11,6 @@ from utils import AvgMeter, lrDecay
 
 
 torch.autograd.set_detect_anomaly(True) 
-torch.set_num_threads(8)
 LOG = open('./trainlog.txt','a')
 ckptDir = './ckpt'
 os.makedirs(ckptDir, exist_ok=True)
@@ -39,7 +38,7 @@ def main():
 
     # Time & Config
     currTime = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
-    logPrint("\n-------- Tensor Flys at {} --------".format(currTime))
+    logPrint("\n-------- Time: {} --------".format(currTime))
     logPrint("Config: Scale-{} | Epochs-{} | Learning Rate-{} | Batch Size-{}".format(scale, epochs, learningRate, batchSize))
 
     # Load Model
@@ -75,6 +74,7 @@ def main():
 
         # Training
         for i, sample in enumerate(dataTrain): 
+            if (i == 500): break
             # Prepare & Feed
             imgGt, imgInput = sample["groundTruth"], sample["input"]
             optimizer.zero_grad()
