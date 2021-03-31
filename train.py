@@ -11,6 +11,7 @@ from utils import AvgMeter, lrDecay
 
 
 torch.autograd.set_detect_anomaly(True) 
+torch.set_num_threads(8)
 LOG = open('./trainlog.txt','a')
 ckptDir = './ckpt'
 os.makedirs(ckptDir, exist_ok=True)
