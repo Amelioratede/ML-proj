@@ -24,11 +24,13 @@ def main():
     parser = argparse.ArgumentParser(description='Single Image Super-resolution <Evaluation>')
     parser.add_argument('-s', '--scale', default=4, type=int, help='Upsampling scale of super-resolution') 
     parser.add_argument('-c', '--ckpt', default=None, type=int, help='The selected checkpoint for evaluation')
+    parser.add_argument('-r', '--reduction', default=6, type=int, help='Reduction of input size') 
     args = parser.parse_args()
 
     # Hyperparams   
     scale = args.scale
     ckptPt = args.ckpt
+    reduction = args.reduction
 
     # Time & Config
     currTime = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
@@ -45,7 +47,7 @@ def main():
     logPrint('Model loaded from Epoch #{}.'.format(ckptPt))
 
     # Load Data
-    dataVal = validationData(scale=scale)
+    dataVal = validationData(scale=scale, reduction=reduction)
     logPrint('Data Loaded. Quantity of Validation Instances:{}.'.format(len(dataVal)))
 
     # Meters
@@ -59,10 +61,11 @@ def main():
     # Loss Function
     lossHandle = nn.L1Loss()
 
-    # Evaluation
     logPrint('Evaluating...')
     model.eval()
-    for i, sample in enumerate(dataVal):
+
+    # Evaluation
+    for _, sample in enumerate(dataVal):
 
         # Prepare & Feed
         imgGt, imgInput = sample["groundTruth"], sample["input"] 
@@ -84,7 +87,7 @@ def main():
     
     # Evaluation Outcome 
     logPrint("Loss of the Baseline:{:.4f}".format(lossMeter.movingAvg()))  
-    logPrint("Avg PSNR - Model vs. Baseline\n{:.4f} {:.4f}".format(modelMeter.movingAvg(), baselineMeter.movingAvg()))  
+    logPrint("Avg PSNR:\nModel vs.Baseline\n{:.4f}dB {:.4f}dB".format(modelMeter.movingAvg(), baselineMeter.movingAvg()))  
 
 
 if __name__ == '__main__': 

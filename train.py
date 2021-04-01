@@ -14,7 +14,7 @@ torch.autograd.set_detect_anomaly(True)
 LOG = open('./trainlog.txt','a')
 ckptDir = './ckpt'
 os.makedirs(ckptDir, exist_ok=True)
-logTimeInterval = 10
+logTimeInterval = 50
 
 
 def logPrint(string): 
@@ -23,11 +23,13 @@ def logPrint(string):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Single Image Super-resolution <Train>')
+    parser = argparse.ArgumentParser(description='Single Image Super-resolution <Train Script>')
     parser.add_argument('-s', '--scale', default=4, type=int, help='Upsampling scale of super-resolution') 
     parser.add_argument('-e', '--epochs', default=40, type=int, help='Total number of epochs to run') 
     parser.add_argument('-l', '--learningrate', default=0.0001, type=float, help='Initial learning rate') 
     parser.add_argument('-b', '--batchsize', default=1, type=int, help='Batch size') 
+    parser.add_argument('-r', '--reduction', default=6, type=int, help='Reduction of input size') 
+    parser.add_argument('-h', '--halt', default=500, type=int, help='Halting point of the training epoch') 
     args = parser.parse_args()
 
     # Hyperparams 
@@ -35,11 +37,14 @@ def main():
     epochs = args.epochs
     learningRate = args.learningrate
     batchSize = args.batchsize
+    reduction = args.reduction
+    halt = args.halt
 
     # Time & Config
     currTime = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
     logPrint("\n-------- Time: {} --------".format(currTime))
-    logPrint("Config: Scale-{} | Epochs-{} | Learning Rate-{} | Batch Size-{}".format(scale, epochs, learningRate, batchSize))
+    logPrint("Config:\n Scale-{} | Epochs-{} | Learning Rate-{} | Batch Size-{}".format(scale, epochs, learningRate, batchSize))
+    logPrint("Reduction-{} | Halt-{}".format(reduction, halt))
 
     # Load Model
     model = Model()
@@ -61,8 +66,8 @@ def main():
     valLossMeter = AvgMeter()
 
     # Load Data
-    dataTrain = trainData(scale=scale, batchSize=batchSize)
-    dataVal = validationData(scale=scale)
+    dataTrain = trainData(scale=scale, reduction=reduction)
+    dataVal = validationData(scale=scale, reduction=reduction)
     logPrint('Data Loaded. Quantity of Training Instances:{}.'.format(len(dataTrain)))
 
     for e in range(currentEpoch, epochs): 
@@ -74,7 +79,9 @@ def main():
 
         # Training
         for i, sample in enumerate(dataTrain): 
-            if (i == 500): break
+            # Halting Point
+            if (i == halt): break
+            
             # Prepare & Feed
             imgGt, imgInput = sample["groundTruth"], sample["input"]
             optimizer.zero_grad()
@@ -98,11 +105,12 @@ def main():
         ckptLoadPath = os.path.join(ckptDir, 'checkpoint_{}'.format(e))
         torch.save(model.state_dict(), ckptLoadPath)
         logPrint('Model saved.')
-
-        # Evaluation  
+ 
         logPrint('Evaluating at Epoch #{}...'.format(e))
         model.eval()
-        for i, sample in enumerate(dataVal):
+        
+        # Evaluation 
+        for _, sample in enumerate(dataVal):
             imgGt, imgInput = sample["groundTruth"], sample["input"] 
             with torch.no_grad():
                 imgOutput = model(imgInput)
