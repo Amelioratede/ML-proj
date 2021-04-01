@@ -1,6 +1,6 @@
 # ML-proj
 
-# 3-30: Toy Model for Sanity Check (Reduction=6)
+## 3-30: Toy Model for Sanity Check (Reduction=6)
 
 Config: Scale-4
 
@@ -18,7 +18,7 @@ Avg PSNR - Model vs. Baseline
 
 
 
-# 3-31: Refined Model beated Baseline (Reduction=6)
+## 3-31: Refined Model beated Baseline (Reduction=6)
 
 Config: Scale-4
 
