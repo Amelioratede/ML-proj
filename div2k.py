@@ -5,11 +5,12 @@ from torch.utils.data import DataLoader
 from PIL import Image
 from torch.utils import data
 import numpy as np
-from utils import getValTransforms, getTrainTransforms
+from utils import getNoTransforms, getTrainTransforms
 
 
 splits = ["valid", "train"]
-DIV2kBasePath = '/home/shanyizhang/Documents/div2k'
+#DIV2kBasePath = '/home/shanyizhang/Documents/div2k'
+DIV2kBasePath = '/Users/kenzhang/Downloads'
 # Data Available at https://data.vision.ee.ethz.ch/cvl/DIV2K/
 
 
@@ -50,7 +51,7 @@ class DIV2k(DIV2kBase):
 
 
 def validationData(scale, reduction):
-    valLoader = DIV2k(root=DIV2kBasePath, split='valid', scale=scale, reduction=reduction, transforms=getValTransforms())
+    valLoader = DIV2k(root=DIV2kBasePath, split='valid', scale=scale, reduction=reduction, transforms=getNoTransforms())
     return DataLoader(valLoader, batch_size=1, shuffle=False)
 
 

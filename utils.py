@@ -2,10 +2,14 @@
 
 import torch
 from torchvision import transforms
+from torch.utils.data import DataLoader
+from torch.utils import data
 from PIL import Image
 import random
+import os
 import numpy as np
 import math
+import imageio
 
 
 decayFactor = 0.9
@@ -93,7 +97,7 @@ class ToNumpy(object):
         return img
 
 
-def getValTransforms():
+def getNoTransforms():
     return transforms.Compose([ToTensor(testFlag=True)])
 
 
@@ -138,3 +142,74 @@ def lrDecay(lr, epoch):
     lrGround = lr / 10.0
     lr = lr*(decayFactor**epoch)
     return max(lr, lrGround)
+
+
+# -----------------------------------
+# Utilies regarding Data Manipulation 
+# -----------------------------------
+
+class VisualDataBase(data.Dataset):
+    def __init__(self, root):
+        self.root = root
+        self.imgs = os.listdir(self.root)
+        if ".DS_Store" in self.imgs:
+            self.imgs.remove(".DS_Store")
+
+    def __len__(self):
+        return len(self.imgs)
+
+    def __getitem__(self, index):
+        return self.imgs[index]
+
+
+class VisualData(VisualDataBase):
+    def __init__(self, root, scale, reduction=1, transforms=None):
+        super().__init__(root)
+        self.scale = scale
+        self.reduction = reduction
+        self.transforms = transforms
+
+    def __getitem__(self, index):
+        imgName = super().__getitem__(index)
+        imgPath = os.path.join(self.root, imgName)
+        img = Image.open(imgPath)
+        width = int(img.size[0] / self.reduction / self.scale) * self.scale
+        height = int(img.size[1] / self.reduction / self.scale) * self.scale
+        imgOriginal = img.resize((width, height), Image.BICUBIC)
+        imgLow = imgOriginal.resize((width // self.scale, height // self.scale), Image.BICUBIC)
+        del img
+        sample = {'groundTruth': imgOriginal, 'input': imgLow}
+        if self.transforms is not None:
+            sample = self.transforms(sample)
+        sample['imgName'] = imgName
+        return sample
+
+
+def visualData(root, scale, reduction):
+    visualLoader = VisualData(root=root, scale=scale, reduction=reduction, transforms=getNoTransforms())
+    return DataLoader(visualLoader, batch_size=1, shuffle=False)
+
+
+def refine(output):
+    return np.uint8(np.clip(output, 0, 255))
+    
+
+def numpyWriter(root, imgName, gt, pred, baseline):
+    imgDir = os.path.join(root, imgName)
+    os.makedirs(imgDir, exist_ok=True)
+    np.save(os.path.join(imgDir, "{}_gt.npy".format(imgName)), gt)
+    np.save(os.path.join(imgDir, "{}_pred.npy".format(imgName)), pred)
+    np.save(os.path.join(imgDir, "{}_baseline.npy".format(imgName)), baseline)
+
+
+def imgWriter(root, imgName, gt, pred, baseline):
+    imgDir = os.path.join(root, imgName)
+    os.makedirs(imgDir, exist_ok=True)
+    imgGt = Image.fromarray(np.uint8(gt))
+    imgGt.save(os.path.join(imgDir, "{}_gt.jpeg".format(imgName)))
+    imgPred = Image.fromarray(np.uint8(pred))
+    imgPred.save(os.path.join(imgDir, "{}_pred.jpeg".format(imgName)))
+    imgBaseline = Image.fromarray(np.uint8(baseline))
+    imgBaseline.save(os.path.join(imgDir, "{}_baseline.jpeg".format(imgName)))
+    imgs = [imgGt, imgBaseline, imgPred]
+    imageio.mimsave(os.path.join(imgDir, "{}_combined.gif".format(imgName)), imgs, format='GIF', duration=1)

@@ -49,6 +49,8 @@ def main():
     # Load Model
     model = Model()
     ckptLs = os.listdir('{}/'.format(ckptDir)) 
+    if ".DS_Store" in ckptLs:
+        ckptLs.remove(".DS_Store")
     if (len(ckptLs) > 0):
         currentEpoch = len(ckptLs)
         ckptLoadPath = os.path.join(ckptDir, 'checkpoint_{}'.format(currentEpoch-1))
