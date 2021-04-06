@@ -1,9 +1,0 @@
-
--------- Time: 04/01/2021, 08:09:06 --------
-Config: Scale-4
-Model loaded from Epoch #12.
-Data Loaded. Quantity of Validation Instances:100.
-Evaluating...
-Loss of the Baseline:0.0523
-Avg PSNR - Model vs. Baseline
-23.5363 22.2092
