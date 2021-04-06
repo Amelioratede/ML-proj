@@ -14,7 +14,7 @@ torch.autograd.set_detect_anomaly(True)
 LOG = open('./trainlog.txt','a')
 ckptDir = './ckpt'
 os.makedirs(ckptDir, exist_ok=True)
-logTimeInterval = 50
+logTimeInterval = 10
 
 
 def logPrint(string): 
@@ -28,8 +28,8 @@ def main():
     parser.add_argument('-e', '--epochs', default=40, type=int, help='Total number of epochs to run') 
     parser.add_argument('-l', '--learningrate', default=0.0001, type=float, help='Initial learning rate') 
     parser.add_argument('-b', '--batchsize', default=1, type=int, help='Batch size') 
-    parser.add_argument('-r', '--reduction', default=6, type=int, help='Reduction of input size') 
-    parser.add_argument('-h', '--halt', default=500, type=int, help='Halting point of the training epoch') 
+    parser.add_argument('-r', '--reduction', default=2, type=int, help='Reduction of input size') 
+    parser.add_argument('-ha', '--halt', default=400, type=int, help='Halting point of the training epoch') 
     args = parser.parse_args()
 
     # Hyperparams 
@@ -43,7 +43,7 @@ def main():
     # Time & Config
     currTime = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
     logPrint("\n-------- Time: {} --------".format(currTime))
-    logPrint("Config:\n Scale-{} | Epochs-{} | Learning Rate-{} | Batch Size-{}".format(scale, epochs, learningRate, batchSize))
+    logPrint("Config:\nScale-{} | Epochs-{} | Learning Rate-{} | Batch Size-{}".format(scale, epochs, learningRate, batchSize))
     logPrint("Reduction-{} | Halt-{}".format(reduction, halt))
 
     # Load Model

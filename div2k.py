@@ -38,8 +38,8 @@ class DIV2k(DIV2kBase):
         imgName = super().__getitem__(index)
         imgPath = os.path.join(self.splitRoot, imgName)
         img = Image.open(imgPath)
-        width = (img.size[0] // self.reduction // self.scale) * self.scale
-        height = (img.size[1] // self.reduction // self.scale) * self.scale
+        width = int(img.size[0] / self.reduction / self.scale) * self.scale
+        height = int(img.size[1] / self.reduction / self.scale) * self.scale
         imgOriginal = img.resize((width, height), Image.BICUBIC)
         imgLow = imgOriginal.resize((width // self.scale, height // self.scale), Image.BICUBIC)
         del img
@@ -55,7 +55,7 @@ def validationData(scale, reduction):
 
 
 def trainData(scale, reduction):
-    trainLoader = DIV2k(root=DIV2kBasePath, split='train', scale=scale, reduction=reduction, transforms=getTrainTransforms())
+    trainLoader = DIV2k(root=DIV2kBasePath, split='train', scale=scale, reduction=reduction, transforms=getTrainTransforms(scale=scale))
     return DataLoader(trainLoader, batch_size=1, shuffle=True)
 
 

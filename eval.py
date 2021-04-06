@@ -24,7 +24,7 @@ def main():
     parser = argparse.ArgumentParser(description='Single Image Super-resolution <Evaluation>')
     parser.add_argument('-s', '--scale', default=4, type=int, help='Upsampling scale of super-resolution') 
     parser.add_argument('-c', '--ckpt', default=None, type=int, help='The selected checkpoint for evaluation')
-    parser.add_argument('-r', '--reduction', default=6, type=int, help='Reduction of input size') 
+    parser.add_argument('-r', '--reduction', default=3, type=int, help='Reduction of input size') 
     args = parser.parse_args()
 
     # Hyperparams   

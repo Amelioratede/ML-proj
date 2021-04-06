@@ -36,6 +36,31 @@ class RandomVerticalFlip(object):
         return sample
 
 
+class RandomRotate(object):
+    def __call__(self, sample):
+        imgGt, imgInput = sample['groundTruth'], sample['input']
+        if random.random() < 0.5:
+            imgGt = imgGt.rotate(90, expand=True)
+            imgInput = imgInput.rotate(90, expand=True)
+        sample = {'groundTruth': imgGt, 'input': imgInput}
+        return sample
+
+
+class RandomZoomInOut(object):
+    def __init__(self, scale):
+        self.scale =  scale
+
+    def __call__(self, sample):
+        imgGt, imgInput = sample['groundTruth'], sample['input']
+        randScalar = 1 + random.random()
+        width = int(imgGt.size[0] / randScalar / self.scale) * self.scale
+        height = int(imgGt.size[1] / randScalar / self.scale) * self.scale
+        imgGt = imgGt.resize((width, height), Image.BICUBIC)
+        imgInput = imgInput.resize((width // self.scale, height // self.scale), Image.BICUBIC)
+        sample = {'groundTruth': imgGt, 'input': imgInput}
+        return sample
+
+
 class ToTensor(object):
     def __init__(self, testFlag):
         self.testFlag = testFlag
@@ -72,8 +97,8 @@ def getValTransforms():
     return transforms.Compose([ToTensor(testFlag=True)])
 
 
-def getTrainTransforms():
-    return transforms.Compose([RandomHorizontalFlip(), RandomVerticalFlip(), ToTensor(testFlag=False)])
+def getTrainTransforms(scale):
+    return transforms.Compose([RandomRotate(), RandomHorizontalFlip(), RandomVerticalFlip(), RandomZoomInOut(scale=scale), ToTensor(testFlag=False)])
 
 
 # -----------------------------------
