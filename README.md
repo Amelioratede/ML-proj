@@ -1,10 +1,13 @@
 # ML-proj
 
 ## Evaluation
+-------- Time: 04/18/2021, 02:11:03 --------
 
 Config: Scale-4 | Reduction-3 
 
-Model loaded from Epoch #0.
+Use 2 GPU(s).
+
+Model loaded from Epoch #1.
 
 Data Loaded. Quantity of Validation Instances:100.
 
@@ -16,7 +19,8 @@ Avg PSNR:
 
 Model vs.Baseline
 
-25.2412dB 23.5021dB
+25.4708dB 23.5021dB
+
 
 ## Visualization
 
