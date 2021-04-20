@@ -10,7 +10,7 @@ from utils import getNoTransforms, getTrainTransforms
 
 splits = ["valid", "train"]
 #DIV2kBasePath = '/home/shanyizhang/Documents/div2k'
-DIV2kBasePath = '/Users/kenzhang/Downloads'
+DIV2kBasePath = './../'
 # Data Available at https://data.vision.ee.ethz.ch/cvl/DIV2K/
 
 

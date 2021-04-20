@@ -10,6 +10,7 @@ from div2k import trainData, validationData
 from utils import AvgMeter, lrDecay
 
 
+torch.backends.cudnn.deterministic = True
 torch.autograd.set_detect_anomaly(True) 
 LOG = open('./trainlog.txt','a')
 ckptDir = './ckpt'
@@ -25,11 +26,11 @@ def logPrint(string):
 def main():
     parser = argparse.ArgumentParser(description='Single Image Super-resolution <Train Script>')
     parser.add_argument('-s', '--scale', default=4, type=int, help='Upsampling scale of super-resolution') 
-    parser.add_argument('-e', '--epochs', default=40, type=int, help='Total number of epochs to run') 
+    parser.add_argument('-e', '--epochs', default=20, type=int, help='Total number of epochs to run') 
     parser.add_argument('-l', '--learningrate', default=0.0001, type=float, help='Initial learning rate') 
     parser.add_argument('-b', '--batchsize', default=1, type=int, help='Batch size') 
-    parser.add_argument('-r', '--reduction', default=2, type=int, help='Reduction of input size') 
-    parser.add_argument('-ha', '--halt', default=400, type=int, help='Halting point of the training epoch') 
+    parser.add_argument('-r', '--reduction', default=3, type=int, help='Reduction of input size') 
+    parser.add_argument('-ha', '--halt', default=800, type=int, help='Halting point of the training epoch') 
     args = parser.parse_args()
 
     # Hyperparams 
@@ -45,9 +46,14 @@ def main():
     logPrint("\n-------- Time: {} --------".format(currTime))
     logPrint("Config:\nScale-{} | Epochs-{} | Learning Rate-{} | Batch Size-{}".format(scale, epochs, learningRate, batchSize))
     logPrint("Reduction-{} | Halt-{}".format(reduction, halt))
+    if torch.cuda.is_available():
+        logPrint("Use {} GPU(s).".format(torch.cuda.device_count()))
 
     # Load Model
     model = Model()
+    model = nn.DataParallel(model)
+    model = model.cuda()
+
     ckptLs = os.listdir('{}/'.format(ckptDir)) 
     if ".DS_Store" in ckptLs:
         ckptLs.remove(".DS_Store")
@@ -87,16 +93,21 @@ def main():
             # Prepare & Feed
             imgGt, imgInput = sample["groundTruth"], sample["input"]
             optimizer.zero_grad()
-            imgGt = torch.autograd.Variable(imgGt)
-            imgInput = torch.autograd.Variable(imgInput) 
+            imgGt = torch.autograd.Variable(imgGt.cuda())
+            imgInput = torch.autograd.Variable(imgInput.cuda()) 
             imgOutput = model(imgInput)
             loss = lossHandle(imgOutput, imgGt)
 
             # Back Propagation
             loss.backward()
             optimizer.step()
-            trainLossMeter.append(loss)
+            trainLossMeter.append(loss.data.item())
 
+            # Clean Up
+            imgGt, imgInput, imgOutput, loss = imgGt.cpu(), imgInput.cpu(), imgOutput.cpu(), loss.cpu()
+            del imgGt, imgInput, imgOutput, loss
+            torch.cuda.empty_cache()
+            
             # Monitor
             if (i % logTimeInterval == 0):
                 logPrint("\tIteration:{} | Mov Avg Loss:{:.4f}".format(i, trainLossMeter.movingAvg()))
@@ -104,10 +115,12 @@ def main():
         logPrint("Training Loss of the epoch:{:.4f}".format(trainLossMeter.movingAvg()))
 
         # Save Model      
-        ckptLoadPath = os.path.join(ckptDir, 'checkpoint_{}'.format(e))
+        ckptLoadPath = os.path.join(ckptDir, 'checkpoint'.format(e))
         torch.save(model.state_dict(), ckptLoadPath)
         logPrint('Model saved.')
- 
+
+        # Skip Evaluation to Save Computation
+        '''
         logPrint('Evaluating at Epoch #{}...'.format(e))
         model.eval()
         
@@ -115,10 +128,12 @@ def main():
         for _, sample in enumerate(dataVal):
             imgGt, imgInput = sample["groundTruth"], sample["input"] 
             with torch.no_grad():
-                imgOutput = model(imgInput)
+                imgOutput = model(imgInput.cuda())
                 valLossMeter.append(lossHandle(imgOutput, imgGt))
                 
         logPrint("Evaluation Loss of the epoch:{:.4f}".format(valLossMeter.movingAvg()))  
+        '''
+
         logPrint("----------")  
 
         # Renew Meters

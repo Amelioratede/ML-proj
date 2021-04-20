@@ -8,9 +8,9 @@ import torch.nn.functional as F
 class FeatureExtractionFirst(nn.Sequential):
     def __init__(self, inputSize, outputSize):
         super(FeatureExtractionFirst, self).__init__()
-        self.conv_A = nn.Conv2d(inputSize, outputSize, kernel_size=3, stride=1, padding=1)
+        self.conv_A = nn.Conv2d(inputSize, outputSize, kernel_size=3, stride=1, padding=1, bias=False)
         self.relu_A = nn.PReLU()
-        self.conv_B = nn.Conv2d(outputSize, outputSize, kernel_size=3, stride=1, padding=1)
+        self.conv_B = nn.Conv2d(outputSize, outputSize, kernel_size=3, stride=1, padding=1, bias=False)
 
     def forward(self, x):
         output = self.conv_B(self.relu_A(self.conv_A(x)))
@@ -20,9 +20,9 @@ class FeatureExtractionFirst(nn.Sequential):
 class FeatureExtraction(nn.Sequential):
     def __init__(self, inputSize):
         super(FeatureExtraction, self).__init__()
-        self.conv_A = nn.Conv2d(inputSize, inputSize, kernel_size=3, stride=1, padding=1)
+        self.conv_A = nn.Conv2d(inputSize, inputSize, kernel_size=3, stride=1, padding=1, bias=False)
         self.relu_A = nn.PReLU()
-        self.conv_B = nn.Conv2d(inputSize, inputSize, kernel_size=3, stride=1, padding=1)
+        self.conv_B = nn.Conv2d(inputSize, inputSize, kernel_size=3, stride=1, padding=1, bias=False)
 
     def forward(self, x):
         phase_A = self.conv_B(self.relu_A(self.conv_A(x)))
@@ -34,11 +34,11 @@ class UpSampling(nn.Sequential):
     def __init__(self, inputSize, outputSize, scale=2):
         super(UpSampling, self).__init__()
         self.scale = scale
-        self.deConv_A = torch.nn.ConvTranspose2d(inputSize, outputSize, kernel_size=4, stride=2, padding=1, bias=True) 
+        self.deConv_A = torch.nn.ConvTranspose2d(inputSize, outputSize, kernel_size=4, stride=2, padding=1, bias=False) 
         self.relu_A = nn.PReLU()
-        self.conv_B = nn.Conv2d(outputSize, outputSize, kernel_size=3, stride=1, padding=1) 
+        self.conv_B = nn.Conv2d(outputSize, outputSize, kernel_size=3, stride=1, padding=1, bias=False) 
         self.relu_B = nn.PReLU()
-        self.conv_C = nn.Conv2d(outputSize, outputSize, kernel_size=3, stride=1, padding=1) 
+        self.conv_C = nn.Conv2d(outputSize, outputSize, kernel_size=3, stride=1, padding=1, bias=False) 
 
     def forward(self, x):
         phase_A = self.relu_A(self.deConv_A(x))
@@ -51,9 +51,9 @@ class Refine(nn.Sequential):
     def __init__(self, inputSize, midSize):
         super(Refine, self).__init__()
         self.featEx = FeatureExtraction(inputSize)
-        self.conv_A = nn.Conv2d(inputSize, midSize, kernel_size=1, stride=1, padding=0)
+        self.conv_A = nn.Conv2d(inputSize, midSize, kernel_size=1, stride=1, padding=0, bias=False)
         self.relu_A = nn.PReLU()
-        self.conv_B = nn.Conv2d(midSize, 3, kernel_size=1, stride=1, padding=0)
+        self.conv_B = nn.Conv2d(midSize, 3, kernel_size=1, stride=1, padding=0, bias=False)
 
     def forward(self, x):
         phase_A = self.featEx(x)
@@ -64,11 +64,11 @@ class Refine(nn.Sequential):
 class Model(nn.Module): 
     def __init__(self):
         super(Model, self).__init__() 
-        self.featEx_A = FeatureExtractionFirst(inputSize=3, outputSize=64)
-        self.Up_A = UpSampling(inputSize=64, outputSize=128)
-        self.featEx_B = FeatureExtraction(inputSize=128)
-        self.Up_B = UpSampling(inputSize=128, outputSize=256)
-        self.Distill = Refine(inputSize=256, midSize=64)
+        self.featEx_A = FeatureExtractionFirst(inputSize=3, outputSize=128)
+        self.Up_A = UpSampling(inputSize=128, outputSize=256)
+        self.featEx_B = FeatureExtraction(inputSize=256)
+        self.Up_B = UpSampling(inputSize=256, outputSize=512)
+        self.Distill = Refine(inputSize=512, midSize=64)
 
     def forward(self, x):
         phase_A = self.featEx_A(x)
@@ -76,8 +76,18 @@ class Model(nn.Module):
         phase_C  = self.featEx_B(phase_B)
         phase_D = self.Up_B(phase_C)
         output = self.Distill(phase_D)
+        del phase_A, phase_B, phase_C, phase_D
         return output
 
+def count_parameters(model):
+    total_params = 0
+    for name, parameter in model.named_parameters():
+        if not parameter.requires_grad: 
+            continue
+        param = parameter.numel()
+        print(name, param)
+        total_params+=param
+    print("In Total:", total_params)
 
 if __name__ == '__main__': 
     model = Model()
@@ -85,3 +95,4 @@ if __name__ == '__main__':
     with torch.no_grad():
         out = model(input) 
         print(out.shape)
+    count_parameters(model)

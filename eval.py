@@ -38,9 +38,14 @@ def main():
     currTime = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
     logPrint("\n-------- Time: {} --------".format(currTime))
     logPrint("Config: Scale-{} | Reduction-{} ".format(scale, reduction))
-    
+    if torch.cuda.is_available():
+        logPrint("Use {} GPU(s).".format(torch.cuda.device_count()))
+
     # Load Model
     model = Model()
+    model = nn.DataParallel(model)
+    model = model.cuda()
+
     if (selectDir == None):
         if (ckptPt == None):
             ckptLs = os.listdir('{}/'.format(ckptDir)) 
@@ -79,14 +84,18 @@ def main():
 
         # Prepare & Feed
         imgGt, imgInput = sample["groundTruth"], sample["input"] 
+        imgGt, imgInput = imgGt.cuda(), imgInput.cuda()
+        imgBaseline = F.interpolate(imgInput, scale_factor=scale, mode='bicubic', align_corners=True)
+        
         with torch.no_grad():
             imgOutput = model(imgInput)
         
         # Compute Baseline
-        imgBaseline = F.interpolate(imgInput, scale_factor=scale, mode='bicubic', align_corners=True)
-        lossMeter.append(lossHandle(imgGt, imgBaseline))
+        loss = lossHandle(imgGt, imgBaseline)
+        lossMeter.append(loss.data.item())
 
         # Translate
+        imgGt, imgInput, imgOutput, imgBaseline, loss = imgGt.cpu(), imgInput.cpu(), imgOutput.cpu(), imgBaseline.cpu(), loss.cpu()
         imgGt, imgOutput, imgBaseline = numpyTrans([imgGt, imgOutput, imgBaseline])
 
         # Compute Metrics
@@ -94,6 +103,10 @@ def main():
         psnrBaseline = PSNR(imgGt, imgBaseline)
         modelMeter.append(psnrModel)
         baselineMeter.append(psnrBaseline)
+
+        # Clean Up
+        del imgGt, imgInput, imgOutput, imgBaseline, loss
+        torch.cuda.empty_cache()
     
     # Evaluation Outcome 
     logPrint("Loss of the Baseline:{:.4f}".format(lossMeter.movingAvg()))  
