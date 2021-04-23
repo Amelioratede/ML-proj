@@ -1,4 +1,6 @@
-# ML-proj
+# ML-proj Super-Image Super-Resolution
+
+Ken S. Zhang | Shera (Xirui) Li | Yiwen Wang
 
 ## Evaluation
 -------- Time: 04/18/2021, 02:11:03 --------
