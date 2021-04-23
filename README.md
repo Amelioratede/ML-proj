@@ -11,15 +11,25 @@ python3 train.py
 ```
 
 -------- Time: 04/20/2021, 03:14:00 --------
+
 Config:
+
 Scale-4 | Epochs-20 | Learning Rate-0.0001 | Batch Size-1
+
 Reduction-3 | Halt-800
+
 Use 1 GPU(s).
+
 Model created. New start. Good Luck!
+
 Data Loaded. Quantity of Training Instances:800.
+
 Training at Epoch #0...
+
 	Iteration:0 | Mov Avg Loss:0.6199
+	
 	Iteration:10 | Mov Avg Loss:0.2612
+	
 	Iteration:20 | Mov Avg Loss:0.2035
 
 ......
