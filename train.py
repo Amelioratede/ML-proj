@@ -26,8 +26,8 @@ def logPrint(string):
 def main():
     parser = argparse.ArgumentParser(description='Single Image Super-resolution <Train Script>')
     parser.add_argument('-s', '--scale', default=4, type=int, help='Upsampling scale of super-resolution') 
-    parser.add_argument('-e', '--epochs', default=20, type=int, help='Total number of epochs to run') 
-    parser.add_argument('-l', '--learningrate', default=0.0001, type=float, help='Initial learning rate') 
+    parser.add_argument('-e', '--epochs', default=10, type=int, help='Total number of epochs to run') 
+    parser.add_argument('-l', '--learningrate', default=0.00001, type=float, help='Initial learning rate') 
     parser.add_argument('-b', '--batchsize', default=1, type=int, help='Batch size') 
     parser.add_argument('-r', '--reduction', default=3, type=int, help='Reduction of input size') 
     parser.add_argument('-ha', '--halt', default=800, type=int, help='Halting point of the training epoch') 

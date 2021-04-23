@@ -12,7 +12,7 @@ import math
 import imageio
 
 
-decayFactor = 0.9
+decayFactor = 0.8
 maxPixelValue = 255.0
 
 
@@ -145,7 +145,7 @@ def lrDecay(lr, epoch):
 
 
 # -----------------------------------
-# Utilies regarding Visualization
+# Utilies regarding Data Manipulation 
 # -----------------------------------
 
 class VisualDataBase(data.Dataset):
