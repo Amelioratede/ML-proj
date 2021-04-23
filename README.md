@@ -2,7 +2,7 @@
 
 **Ken S. Zhang | Shera (Xirui) Li | Yiwen Wang**
 
-## Train
+## Training
 
 All the training is executed on **cuda5.cims.nyu.edu**.
 
