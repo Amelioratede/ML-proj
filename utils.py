@@ -145,7 +145,7 @@ def lrDecay(lr, epoch):
 
 
 # -----------------------------------
-# Utilies regarding Data Manipulation 
+# Utilies regarding Visualization
 # -----------------------------------
 
 class VisualDataBase(data.Dataset):
