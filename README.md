@@ -2,6 +2,10 @@
 
 **Ken S. Zhang | Shera (Xirui) Li | Yiwen Wang**
 
+## Dataset 
+
+Data Available at https://data.vision.ee.ethz.ch/cvl/DIV2K/
+
 ## Training
 
 All the training is executed on **cuda5.cims.nyu.edu**.
