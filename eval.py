@@ -52,7 +52,7 @@ def main():
             if ".DS_Store" in ckptLs:
                 ckptLs.remove(".DS_Store")
             ckptPt = len(ckptLs) - 1
-        ckptLoadPath = os.path.join(ckptDir, 'checkpoint_{}'.format(ckptPt))
+        ckptLoadPath = os.path.join(ckptDir, 'checkpoint')
         logPrint('Model loaded from Epoch #{}.'.format(ckptPt))
     else:
         ckptLoadPath = selectDir
@@ -115,3 +115,5 @@ def main():
 
 if __name__ == '__main__': 
     main()
+
+

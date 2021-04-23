@@ -12,7 +12,7 @@ import math
 import imageio
 
 
-decayFactor = 0.8
+decayFactor = 0.9
 maxPixelValue = 255.0
 
 
@@ -145,7 +145,7 @@ def lrDecay(lr, epoch):
 
 
 # -----------------------------------
-# Utilies regarding Data Manipulation 
+# Utilies regarding Visualization
 # -----------------------------------
 
 class VisualDataBase(data.Dataset):
@@ -213,3 +213,6 @@ def imgWriter(root, imgName, gt, pred, baseline):
     imgBaseline.save(os.path.join(imgDir, "{}_baseline.jpeg".format(imgName)))
     imgs = [imgGt, imgBaseline, imgPred]
     imageio.mimsave(os.path.join(imgDir, "{}_combined.gif".format(imgName)), imgs, format='GIF', duration=1)
+
+
+
