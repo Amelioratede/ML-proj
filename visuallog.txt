@@ -1,5 +1,4 @@
 
--------- Time: 04/06/2021, 16:58:46 --------
 Config: Scale-4 | Reduction-2 
 Model loaded from Epoch #0.
 Data Loaded. Quantity of Visualization Instances:2.
