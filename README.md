@@ -1,4 +1,4 @@
-# ML-proj : Super-Image Super-Resolution
+# ML-proj : Single-Image Super-Resolution
 
 **Ken S. Zhang | Shera (Xirui) Li | Yiwen Wang**
 
